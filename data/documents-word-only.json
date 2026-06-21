@@ -1,0 +1,102 @@
+{
+  "dossier-etat": {
+    "title": "Dossier État — Corpus institutionnel complet du Québec",
+    "description": "Document maître du Projet Nova regroupant les principes, mécanismes, phases, protections et outils nécessaires pour présenter un projet de Québec souverain structuré, contrôlable et compréhensible.",
+    "docx": "documents/dossier-etat-projet-nova-corpus-institutionnel-complet.docx"
+  },
+  "systeme-nova": {
+    "title": "Système Nova — Constitution et normes fondamentales",
+    "description": "Version révisée et consolidée du Système Nova, organisée autour de la Constitution du Québec souverain et des normes fondamentales qui guident son interprétation et son application.",
+    "docx": "documents/systeme-nova-constitution-normes-fondamentales.docx"
+  },
+  "programme-electoral-complet": {
+    "title": "Programme électoral complet du Projet Nova",
+    "description": "Feuille de route politique consolidée du Projet Nova : réforme démocratique, souveraineté, État transparent, fiscalité, économie, services publics, justice, logement, numérique et gouvernance.",
+    "docx": "documents/programme-electoral-complet-projet-nova.docx"
+  },
+  "manifeste-officiel": {
+    "title": "Manifeste officiel du Projet Nova",
+    "description": "Document de mobilisation et de référence publique : appel au peuple, mission nationale, dix engagements, serment public, vision de pays et premières mesures de mandat.",
+    "docx": "documents/manifeste-officiel-projet-nova.docx"
+  },
+  "plan-maitre-consolidation": {
+    "title": "Plan maître de consolidation du Projet Nova",
+    "description": "Document de travail pour consolider le corpus, corriger les contradictions, harmoniser les textes et clarifier la hiérarchie normative du Projet Nova.",
+    "docx": "documents/plan-maitre-consolidation-projet-nova.docx"
+  },
+  "constitution": {
+    "title": "Constitution du Québec — Version Projet Nova consolidée",
+    "description": "Document constitutionnel de référence du Projet Nova.",
+    "docx": "documents/constitution-du-quebec-projet-nova-consolidee.docx"
+  },
+  "lois-organiques": {
+    "title": "Lois organiques du Québec — Version Projet Nova consolidées",
+    "description": "Cadre organique de l’État, des autorités indépendantes, de l’intégrité publique et de la démocratie institutionnelle.",
+    "docx": "documents/lois-organiques-du-quebec-projet-nova-consolidees.docx"
+  },
+  "lois-ordinaires": {
+    "title": "Lois ordinaires du Québec — Version Projet Nova consolidées",
+    "description": "Organisation quotidienne du droit, des services, des recours, des finances, des régions et de la vie publique.",
+    "docx": "documents/lois-ordinaires-du-quebec-projet-nova-consolidees.docx"
+  },
+  "lois-administratives": {
+    "title": "Lois administratives du Québec — Version Projet Nova consolidées",
+    "description": "Cadre administratif de l’État, de la fonction publique, des permis, des recours, de la cybersécurité et des urgences.",
+    "docx": "documents/lois-administratives-du-quebec-projet-nova-consolidees.docx"
+  },
+  "reglements": {
+    "title": "Règlements du Québec — Version Projet Nova consolidés",
+    "description": "Cadre du pouvoir réglementaire, des procédures, des contrôles, des recours et des garanties démocratiques.",
+    "docx": "documents/reglements-du-quebec-projet-nova-consolides.docx"
+  },
+  "volet-1": {
+    "title": "Volet I — Québec dans le Canada",
+    "description": "Document pratique d’application immédiate dans le cadre actuel : premier mandat, audits, transparence et préparation souveraine.",
+    "docx": "documents/volet-1-quebec-dans-le-canada-projet-nova-consolide.docx"
+  },
+  "volet-2": {
+    "title": "Volet II — Québec en transition",
+    "description": "Document pratique de passage constitutionnel, administratif et démocratique du Projet Nova.",
+    "docx": "documents/volet-2-quebec-en-transition-projet-nova-consolide.docx"
+  },
+  "volet-3": {
+    "title": "Volet III — Québec pays souverain",
+    "description": "Document de fonctionnement complet du Québec devenu pays souverain.",
+    "docx": "documents/volet-3-quebec-pays-souverain-projet-nova-consolide.docx"
+  },
+  "doctrine": {
+    "title": "Doctrine fondatrice du Projet Nova",
+    "description": "Principes directeurs, ligne politique générale et logique de refondation.",
+    "docx": "documents/doctrine-fondatrice-projet-nova.docx"
+  },
+  "version-publique": {
+    "title": "Version publique simplifiée — citoyens",
+    "description": "Présentation simplifiée du projet pour consultation citoyenne.",
+    "docx": "documents/version-publique-simplifiee-citoyens.docx"
+  },
+  "outil-transition": {
+    "title": "Outil de transition constitutionnelle",
+    "description": "Outil technique de continuité, d’activation progressive et de suivi de transition.",
+    "docx": "documents/outil-de-transition-constitutionnelle.docx"
+  },
+  "table-concordance": {
+    "title": "Table de concordance normative",
+    "description": "Repérage des normes, liens entre textes et contrôle de cohérence.",
+    "docx": "documents/table-de-concordance-normative.docx"
+  },
+  "audit-defense": {
+    "title": "Audit de défense constitutionnelle",
+    "description": "Analyse des protections, des risques de contournement et des mécanismes de défense.",
+    "docx": "documents/audit-defense-constitutionnelle.docx"
+  },
+  "registre-risques": {
+    "title": "Registre des risques résiduels et correctifs",
+    "description": "Identification des risques restants et mesures correctives proposées.",
+    "docx": "documents/registre-risques-residuels-correctifs.docx"
+  },
+  "code-conduite-source": {
+    "title": "Code de conduite — document source",
+    "description": "Cadre d’intégrité, de responsabilité et de comportement public.",
+    "docx": "documents/code-de-conduite-document-source.docx"
+  }
+}
