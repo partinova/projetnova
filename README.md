@@ -57,6 +57,13 @@ Ajout des trois documents consolidés : Volet I — Québec dans le Canada, Vole
 
 ## Mise à jour documents
 
-Ajout des documents :
+Ajout du document :
 - Système Nova — Constitution et normes fondamentales (PDF + DOCX)
-- Plan maître de consolidation de Projet Nova (PDF)
+
+## Mise à jour — Programme électoral complet
+
+Ajout du document `Programme électoral complet du Projet Nova` en PDF et DOCX :
+- `documents/programme-electoral-complet-projet-nova.pdf`
+- `documents/programme-electoral-complet-projet-nova.docx`
+
+La page `documents.html` contient maintenant une section `Programme électoral`, la page `programme.html` pointe vers le document complet, et `visionneuse.html?doc=programme-electoral-complet` permet la consultation en ligne.
