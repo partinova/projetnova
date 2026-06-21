@@ -1,23 +1,30 @@
-# Projet Nova — site web officiel
+# Projet Nova — site officiel
 
-Version statique prête pour GitHub Pages.
+Version professionnelle finale pour GitHub Pages.
 
-## Inclus
+## Publication
 
-- Site responsive complet
-- Domaine GitHub Pages : `www.partinova.ca`
-- Formulaires branchés à Formspree
-- Favicon / icônes favoris / icônes mobiles
-- Pages principales : accueil, vision, programme, constitution, transition, documents, participer, contact
-- Courriel officiel : `officiellenovaparti@gmail.com`
-- Facebook officiel : `https://www.facebook.com/Projet.Nova`
+Téléverser tout le contenu de ce dossier à la racine du dépôt `partinova/projetnova`.
 
-## Mise en ligne
-
-Envoyer tout le contenu de ce dossier à la racine du dépôt GitHub `partinova/projetnova`.
-
-Message de commit recommandé :
+Le fichier `CNAME` contient :
 
 ```text
-Brancher Formspree et corriger les icônes
+www.partinova.ca
 ```
+
+## Formulaires
+
+Les formulaires `contact.html` et `participer.html` utilisent Formspree :
+
+```text
+https://formspree.io/f/xkolwjdg
+```
+
+Le champ `_gotcha` a été retiré.
+
+## Après téléversement
+
+1. Attendre le déploiement GitHub Pages.
+2. Tester `contact.html` et `participer.html`.
+3. Vérifier Formspree → Submissions.
+4. Activer `Enforce HTTPS` dans GitHub Pages dès que le certificat est disponible.
