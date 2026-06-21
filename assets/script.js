@@ -22,3 +22,32 @@ document.querySelectorAll('form[data-formspree]').forEach(form=>{
     if(submit){submit.disabled=false;submit.textContent=old;}
   });
 });
+
+
+// Registre public des propositions citoyennes validées
+(function(){
+  const mount=document.querySelector('[data-propositions]');
+  if(!mount) return;
+  const search=document.getElementById('proposal-search');
+  const filter=document.getElementById('proposal-filter');
+  let proposals=[];
+  const esc=(s)=>String(s||'').replace(/[&<>"]/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function render(){
+    const q=(search?.value||'').trim().toLowerCase();
+    const cat=(filter?.value||'').trim();
+    const list=proposals.filter(p=>{
+      const blob=[p.date,p.nom,p.region,p.categorie,p.titre,p.message,p.statut].join(' ').toLowerCase();
+      return (!q || blob.includes(q)) && (!cat || p.categorie===cat);
+    });
+    if(!list.length){mount.innerHTML='<div class="empty-state">Aucune proposition publique validée ne correspond à cette recherche.</div>';return;}
+    mount.innerHTML=list.map(p=>`<article class="proposal-card reveal in"><div class="proposal-head"><h3 class="proposal-title">${esc(p.titre)}</h3><span class="status-pill">${esc(p.statut||'À analyser')}</span></div><div class="proposal-meta"><span>${esc(p.categorie)}</span><span>${esc(p.region)}</span><span>${esc(p.date)}</span><span>${esc(p.nom)}</span></div><p class="proposal-message">${esc(p.message)}</p></article>`).join('');
+  }
+  fetch('data/propositions-publiques.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).then(data=>{
+    proposals=Array.isArray(data)?data:[];
+    const cats=[...new Set(proposals.map(p=>p.categorie).filter(Boolean))].sort();
+    if(filter){cats.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;filter.appendChild(o);});}
+    render();
+  }).catch(()=>{mount.innerHTML='<div class="empty-state">Le registre public n’a pas pu être chargé pour le moment.</div>';});
+  search?.addEventListener('input',render);
+  filter?.addEventListener('change',render);
+})();
