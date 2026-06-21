@@ -41,6 +41,10 @@ Les documents normatifs de base ont été remplacés par les versions consolidé
 - `data/propositions-publiques.json` : propositions validées affichées publiquement.
 - Les propositions envoyées par le formulaire sont transmises par Formspree au courriel officiel et publiées seulement après validation.
 
-## Visionneuse de documents
 
-La page `visionneuse.html?doc=...` permet de consulter les PDF directement dans le site et de télécharger les versions PDF/DOCX.
+## Mise à jour — Équipe
+- Ajout de `equipe.html`.
+- Menu principal réordonné alphabétiquement.
+- Photo et fiche publique de Benoit Cantin ajoutées dans `assets/equipe/`.
+
+- Image générique ajoutée pour les membres de l’équipe sans photo personnelle : `assets/equipe/photo-a-venir.png`.
