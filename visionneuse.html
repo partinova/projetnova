@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visionneuse de documents — Projet Nova</title>
+  <meta name="description" content="Visionneuse officielle des documents publics du Projet Nova.">
+  <meta name="theme-color" content="#06172d">
+  <meta property="og:title" content="Visionneuse de documents — Projet Nova">
+  <meta property="og:description" content="Consulter les documents publics du Projet Nova directement dans le site.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.partinova.ca/visionneuse.html">
+  <meta property="og:image" content="https://www.partinova.ca/assets/banniere-nova.jpg">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div class="topbar"><div class="container"><div>Projet Nova — site officiel de travail</div><div><a href="https://mail.google.com/mail/?view=cm&fs=1&to=officiellenovaparti%40gmail.com&su=Message%20depuis%20partinova.ca" target="_blank" rel="noopener">officiellenovaparti@gmail.com</a> · <a href="https://www.facebook.com/Projet.Nova" target="_blank" rel="noopener">Facebook officiel</a></div></div></div>
+<header class="site-header"><div class="container"><nav class="nav" aria-label="Navigation principale"><a class="brand" href="index.html" aria-label="Projet Nova — accueil"><span class="brand-logo"><img src="assets/logo-nova.png" alt="Logo Projet Nova"></span><span class="brand-text">Projet Nova<small>Le renouveau commence maintenant</small></span></a><div class="navlinks" data-nav><a href="index.html">Accueil</a><a href="vision.html">Vision</a><a href="programme.html">Programme</a><a href="constitution.html">Constitution</a><a href="transition.html">Transition</a><a href="documents.html" aria-current="page">Documents</a><a href="actualites.html">Actualités</a><a href="participer.html">Participer</a><a href="contact.html">Contact</a></div><div class="nav-actions"><a class="btn btn-outline" href="contact.html">Nous écrire</a><a class="btn btn-primary" href="participer.html">Participer</a><button class="mobile-toggle" data-menu aria-expanded="false" aria-label="Ouvrir le menu">Menu</button></div></nav></div></header>
+<main id="contenu"><section class="page-hero compact"><div class="container reveal"><div class="eyebrow">Visionneuse</div><h1 id="docTitle">Document Projet Nova</h1><p id="docDescription">Chargement du document...</p></div></section>
+<section class="section alt"><div class="container"><div class="viewer-shell reveal"><div class="viewer-toolbar"><div><div class="viewer-title" id="toolbarTitle">Document</div><div class="doc-note">Lecture intégrée en PDF. Certains navigateurs mobiles peuvent ouvrir le PDF dans un nouvel onglet.</div></div><div class="viewer-actions"><a class="btn btn-outline" href="documents.html">Retour aux documents</a><a class="btn btn-primary" id="openPdf" href="#" target="_blank" rel="noopener">Ouvrir le PDF</a><a class="btn btn-outline" id="downloadPdf" href="#" download>Télécharger PDF</a><a class="btn btn-outline" id="downloadDocx" href="#" download>Télécharger DOCX</a></div></div><iframe class="pdf-frame" id="pdfFrame" title="Visionneuse PDF Projet Nova"></iframe><div class="viewer-fallback">Si le document ne s’affiche pas, utilisez le bouton <strong>Ouvrir le PDF</strong> ou <strong>Télécharger PDF</strong>.</div></div></div></section></main>
+<footer class="footer"><div class="container footer-grid"><div><h3>Projet Nova</h3><p>Projet politique québécois de refondation nationale, fondé sur la souveraineté populaire, l’intégrité, la transparence et la responsabilité publique.</p><p><a href="mailto:officiellenovaparti@gmail.com">officiellenovaparti@gmail.com</a></p><p><a href="https://www.facebook.com/Projet.Nova" target="_blank" rel="noopener">Page Facebook officielle</a></p></div><div><h3>Navigation</h3><p><a href="vision.html">Vision</a><br><a href="programme.html">Programme</a><br><a href="documents.html">Documents</a><br><a href="actualites.html">Actualités</a><br><a href="participer.html">Participer</a><br><a href="contact.html">Contact</a></p></div><div><h3>Cadre public</h3><p><a href="code-conduite.html">Code de conduite</a><br><a href="confidentialite.html">Confidentialité</a><br><a href="avis-legal.html">Avis légal</a><br><a href="accessibilite.html">Accessibilité</a></p></div></div><div class="container legal">© Projet Nova. Tous droits réservés. Site statique publié avec GitHub Pages. Projet en construction — aucune sollicitation financière n’est traitée par ce site.</div></footer>
+<script src="assets/script.js"></script>
+<script>
+const documentsNova = {
+  'constitution': {title: 'Constitution du Québec — Version Projet Nova consolidée', description: 'Document constitutionnel de référence du Projet Nova.', pdf: 'documents/constitution-du-quebec-projet-nova-consolidee.pdf', docx: 'documents/constitution-du-quebec-projet-nova-consolidee.docx'},
+  'lois-organiques': {title: 'Lois organiques du Québec — Version Projet Nova consolidées', description: 'Mécanismes d’application constitutionnelle, autorités indépendantes, intégrité publique et souveraineté démocratique.', pdf: 'documents/lois-organiques-du-quebec-projet-nova-consolidees.pdf', docx: 'documents/lois-organiques-du-quebec-projet-nova-consolidees.docx'},
+  'lois-ordinaires': {title: 'Lois ordinaires du Québec — Version Projet Nova consolidées', description: 'Organisation quotidienne du droit, des services, des recours, des finances, des régions et de la vie publique.', pdf: 'documents/lois-ordinaires-du-quebec-projet-nova-consolidees.pdf', docx: 'documents/lois-ordinaires-du-quebec-projet-nova-consolidees.docx'},
+  'lois-administratives': {title: 'Lois administratives du Québec — Version Projet Nova consolidées', description: 'Cadre administratif de l’État, de la fonction publique, des permis, des recours, de la cybersécurité et des urgences.', pdf: 'documents/lois-administratives-du-quebec-projet-nova-consolidees.pdf', docx: 'documents/lois-administratives-du-quebec-projet-nova-consolidees.docx'},
+  'reglements': {title: 'Règlements du Québec — Version Projet Nova consolidés', description: 'Cadre du pouvoir réglementaire, des procédures, des contrôles, des recours et des garanties démocratiques.', pdf: 'documents/reglements-du-quebec-projet-nova-consolides.pdf', docx: 'documents/reglements-du-quebec-projet-nova-consolides.docx'},
+  'doctrine': {title: 'Doctrine fondatrice du Projet Nova', description: 'Principes directeurs, ligne politique générale et logique de refondation.', pdf: 'documents/doctrine-fondatrice-projet-nova.pdf', docx: 'documents/doctrine-fondatrice-projet-nova.docx'},
+  'version-publique': {title: 'Version publique simplifiée — citoyens', description: 'Présentation simplifiée du projet pour consultation citoyenne.', pdf: 'documents/version-publique-simplifiee-citoyens.pdf', docx: 'documents/version-publique-simplifiee-citoyens.docx'},
+  'outil-transition': {title: 'Outil de transition constitutionnelle', description: 'Outil technique de continuité, d’activation progressive et de suivi de transition.', pdf: 'documents/outil-de-transition-constitutionnelle.pdf', docx: 'documents/outil-de-transition-constitutionnelle.docx'},
+  'table-concordance': {title: 'Table de concordance normative', description: 'Repérage des normes, liens entre textes et contrôle de cohérence.', pdf: 'documents/table-de-concordance-normative.pdf', docx: 'documents/table-de-concordance-normative.docx'},
+  'audit-defense': {title: 'Audit de défense constitutionnelle', description: 'Analyse des protections, des risques de contournement et des mécanismes de défense.', pdf: 'documents/audit-defense-constitutionnelle.pdf', docx: 'documents/audit-defense-constitutionnelle.docx'},
+  'registre-risques': {title: 'Registre des risques résiduels et correctifs', description: 'Identification des risques restants et mesures correctives proposées.', pdf: 'documents/registre-risques-residuels-correctifs.pdf', docx: 'documents/registre-risques-residuels-correctifs.docx'},
+  'code-conduite-source': {title: 'Code de conduite — document source', description: 'Cadre d’intégrité, de responsabilité et de comportement public.', pdf: 'documents/code-de-conduite-document-source.pdf', docx: 'documents/code-de-conduite-document-source.docx'}
+};
+const params = new URLSearchParams(window.location.search);
+const key = params.get('doc') || 'constitution';
+const doc = documentsNova[key];
+if (!doc) {
+  document.getElementById('docTitle').textContent = 'Document introuvable';
+  document.getElementById('docDescription').textContent = 'Le document demandé n’existe pas ou n’est plus disponible.';
+  document.getElementById('toolbarTitle').textContent = 'Document introuvable';
+} else {
+  document.title = doc.title + ' — Projet Nova';
+  document.getElementById('docTitle').textContent = doc.title;
+  document.getElementById('docDescription').textContent = doc.description;
+  document.getElementById('toolbarTitle').textContent = doc.title;
+  const pdfUrl = doc.pdf + '#toolbar=1&navpanes=0&view=FitH';
+  document.getElementById('pdfFrame').src = pdfUrl;
+  document.getElementById('openPdf').href = doc.pdf;
+  document.getElementById('downloadPdf').href = doc.pdf;
+  document.getElementById('downloadDocx').href = doc.docx;
+}
+</script>
+</body></html>
