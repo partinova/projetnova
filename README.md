@@ -28,3 +28,8 @@ Le champ `_gotcha` a été retiré.
 2. Tester `contact.html` et `participer.html`.
 3. Vérifier Formspree → Submissions.
 4. Activer `Enforce HTTPS` dans GitHub Pages dès que le certificat est disponible.
+
+
+## Mise à jour documents consolidés
+
+Les documents normatifs de base ont été remplacés par les versions consolidées Projet Nova en formats PDF et DOCX : Constitution, lois organiques, lois ordinaires, lois administratives et règlements. Les trois anciens documents Volet I/II/III ont été retirés de la bibliothèque publique.
