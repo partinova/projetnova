@@ -1,20 +1,23 @@
-# Projet Nova — site web professionnel GitHub Pages
+# Projet Nova — site web officiel
 
-Version premium du site statique.
+Version statique prête pour GitHub Pages.
 
-## Publication GitHub
+## Inclus
 
-Téléverser tout le contenu de ce dossier à la racine du dépôt `partinova/projetnova`.
-Le fichier `CNAME` contient `www.partinova.ca`.
+- Site responsive complet
+- Domaine GitHub Pages : `www.partinova.ca`
+- Formulaires branchés à Formspree
+- Favicon / icônes favoris / icônes mobiles
+- Pages principales : accueil, vision, programme, constitution, transition, documents, participer, contact
+- Courriel officiel : `officiellenovaparti@gmail.com`
+- Facebook officiel : `https://www.facebook.com/Projet.Nova`
 
-## Fichiers importants
+## Mise en ligne
 
-- `index.html` : accueil
-- `assets/` : logo et bannière
-- `documents/` : documents DOCX publics
-- `CNAME` : domaine GitHub Pages
-- `robots.txt` / `sitemap.xml` : SEO de base
+Envoyer tout le contenu de ce dossier à la racine du dépôt GitHub `partinova/projetnova`.
 
-## Contact
+Message de commit recommandé :
 
-officiellenovaparti@gmail.com
+```text
+Brancher Formspree et corriger les icônes
+```
