@@ -48,3 +48,8 @@ Les documents normatifs de base ont été remplacés par les versions consolidé
 - Photo et fiche publique de Benoit Cantin ajoutées dans `assets/equipe/`.
 
 - Image générique ajoutée pour les membres de l’équipe sans photo personnelle : `assets/equipe/photo-a-venir.png`.
+
+
+## Mise à jour — Volets stratégiques
+
+Ajout des trois documents consolidés : Volet I — Québec dans le Canada, Volet II — Québec en transition, Volet III — Québec pays souverain. Chaque document est disponible en PDF et DOCX, avec consultation en ligne via `visionneuse.html`.
