@@ -1,69 +1,21 @@
-# Projet Nova — site officiel
+# Projet Nova — site web professionnel
 
-Version professionnelle finale pour GitHub Pages.
+Version statique prête pour publication sur GitHub Pages.
 
-## Publication
+## Mise à jour incluse
 
-Téléverser tout le contenu de ce dossier à la racine du dépôt `partinova/projetnova`.
+- Ajout du Dossier État — Corpus institutionnel complet du Québec.
+- Mise à jour du Système Nova — Constitution et normes fondamentales.
+- Mise à jour du Manifeste officiel du Projet Nova.
+- Mise à jour du Plan maître de consolidation du Projet Nova.
+- Mise à jour du Programme électoral complet du Projet Nova.
+- Conservation des documents Word seulement : les PDF ont été retirés du site.
+- Page Documents mise à jour avec visionnement en ligne et téléchargement Word.
 
-Le fichier `CNAME` contient :
+## Visionneuse
 
-```text
-www.partinova.ca
-```
+La visionneuse utilise les fichiers DOCX publiés sur le domaine public `https://www.partinova.ca/` avec la visionneuse Office en ligne. Elle fonctionne après publication sur GitHub Pages et résolution correcte du domaine.
 
-## Formulaires
+## Publication rapide
 
-Les formulaires `contact.html` et `participer.html` utilisent Formspree :
-
-```text
-https://formspree.io/f/xkolwjdg
-```
-
-Le champ `_gotcha` a été retiré.
-
-## Après téléversement
-
-1. Attendre le déploiement GitHub Pages.
-2. Tester `contact.html` et `participer.html`.
-3. Vérifier Formspree → Submissions.
-4. Activer `Enforce HTTPS` dans GitHub Pages dès que le certificat est disponible.
-
-
-## Mise à jour documents consolidés
-
-Les documents normatifs de base ont été remplacés par les versions consolidées Projet Nova en formats PDF et DOCX : Constitution, lois organiques, lois ordinaires, lois administratives et règlements. Les trois anciens documents Volet I/II/III ont été retirés de la bibliothèque publique.
-
-
-## Page ajoutée
-
-- `propositions.html` : registre citoyen public pour proposer ce qui devrait être changé.
-- `data/propositions-publiques.json` : propositions validées affichées publiquement.
-- Les propositions envoyées par le formulaire sont transmises par Formspree au courriel officiel et publiées seulement après validation.
-
-
-## Mise à jour — Équipe
-- Ajout de `equipe.html`.
-- Menu principal réordonné alphabétiquement.
-- Photo et fiche publique de Benoit Cantin ajoutées dans `assets/equipe/`.
-
-- Image générique ajoutée pour les membres de l’équipe sans photo personnelle : `assets/equipe/photo-a-venir.png`.
-
-
-## Mise à jour — Volets stratégiques
-
-Ajout des trois documents consolidés : Volet I — Québec dans le Canada, Volet II — Québec en transition, Volet III — Québec pays souverain. Chaque document est disponible en PDF et DOCX, avec consultation en ligne via `visionneuse.html`.
-
-
-## Mise à jour documents
-
-Ajout du document :
-- Système Nova — Constitution et normes fondamentales (PDF + DOCX)
-
-## Mise à jour — Programme électoral complet
-
-Ajout du document `Programme électoral complet du Projet Nova` en PDF et DOCX :
-- `documents/programme-electoral-complet-projet-nova.pdf`
-- `documents/programme-electoral-complet-projet-nova.docx`
-
-La page `documents.html` contient maintenant une section `Programme électoral`, la page `programme.html` pointe vers le document complet, et `visionneuse.html?doc=programme-electoral-complet` permet la consultation en ligne.
+Déposer tout le contenu du dossier à la racine du dépôt GitHub Pages, puis attendre le déploiement.
