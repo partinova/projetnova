@@ -53,3 +53,10 @@ Les documents normatifs de base ont été remplacés par les versions consolidé
 ## Mise à jour — Volets stratégiques
 
 Ajout des trois documents consolidés : Volet I — Québec dans le Canada, Volet II — Québec en transition, Volet III — Québec pays souverain. Chaque document est disponible en PDF et DOCX, avec consultation en ligne via `visionneuse.html`.
+
+
+## Mise à jour documents
+
+Ajout des documents :
+- Système Nova — Constitution et normes fondamentales (PDF + DOCX)
+- Plan maître de consolidation de Projet Nova (PDF)
