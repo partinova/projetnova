@@ -41,3 +41,21 @@ Les fichiers suivants sont inclus :
 - `assets/android-chrome-512x512.png`
 
 Après publication, les navigateurs peuvent garder l’ancienne icône en cache. Tester en navigation privée ou vider le cache.
+
+
+## Correctif anti-spam appliqué
+
+Le champ caché `_gotcha` a été retiré des formulaires `contact.html` et `participer.html`, car les tests Formspree indiquaient : `Honeypot field _gotcha is not empty`.
+
+Les formulaires continuent d'utiliser l'endpoint Formspree :
+
+```text
+https://formspree.io/f/xkolwjdg
+```
+
+Après publication, tester les deux pages :
+
+- https://www.partinova.ca/contact.html
+- https://www.partinova.ca/participer.html
+
+Dans Formspree, vérifier `Submissions → Inbox`. Les anciens tests peuvent être dans `Spam`; les nouveaux tests ne devraient plus être rejetés par le honeypot.
