@@ -33,3 +33,14 @@ Le champ `_gotcha` a été retiré.
 ## Mise à jour documents consolidés
 
 Les documents normatifs de base ont été remplacés par les versions consolidées Projet Nova en formats PDF et DOCX : Constitution, lois organiques, lois ordinaires, lois administratives et règlements. Les trois anciens documents Volet I/II/III ont été retirés de la bibliothèque publique.
+
+
+## Page ajoutée
+
+- `propositions.html` : registre citoyen public pour proposer ce qui devrait être changé.
+- `data/propositions-publiques.json` : propositions validées affichées publiquement.
+- Les propositions envoyées par le formulaire sont transmises par Formspree au courriel officiel et publiées seulement après validation.
+
+## Visionneuse de documents
+
+La page `visionneuse.html?doc=...` permet de consulter les PDF directement dans le site et de télécharger les versions PDF/DOCX.
