@@ -1,102 +1,342 @@
 {
-  "dossier-etat": {
+  "dossier-etat-complet": {
+    "slug": "dossier-etat-complet",
+    "section": "Documents maîtres",
+    "type": "Corpus institutionnel",
     "title": "Dossier État — Corpus institutionnel complet du Québec",
-    "description": "Document maître du Projet Nova regroupant les principes, mécanismes, phases, protections et outils nécessaires pour présenter un projet de Québec souverain structuré, contrôlable et compréhensible.",
-    "docx": "documents/dossier-etat-projet-nova-corpus-institutionnel-complet.docx"
+    "description": "Corpus complet de référence : constitution, lois, règlements, doctrine, transition, risques et audit institutionnel.",
+    "tags": [
+      "corpus",
+      "État",
+      "dépôt institutionnel"
+    ],
+    "featured": true,
+    "docx": "documents/dossier-etat-corpus-institutionnel-complet.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 928998,
+    "format": "DOCX"
+  },
+  "dossier-etat-maitre": {
+    "slug": "dossier-etat-maitre",
+    "section": "Documents maîtres",
+    "type": "Corpus maître",
+    "title": "Dossier État — Corpus institutionnel maître",
+    "description": "Version maître hiérarchisée du dossier institutionnel et normatif du Projet Nova.",
+    "tags": [
+      "corpus maître",
+      "hiérarchie",
+      "architecture"
+    ],
+    "featured": false,
+    "docx": "documents/dossier-etat-corpus-institutionnel-maitre.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 905689,
+    "format": "DOCX"
   },
   "systeme-nova": {
+    "slug": "systeme-nova",
+    "section": "Documents maîtres",
+    "type": "Socle supérieur",
     "title": "Système Nova — Constitution et normes fondamentales",
-    "description": "Version révisée et consolidée du Système Nova, organisée autour de la Constitution du Québec souverain et des normes fondamentales qui guident son interprétation et son application.",
-    "docx": "documents/systeme-nova-constitution-normes-fondamentales.docx"
-  },
-  "programme-electoral-complet": {
-    "title": "Programme électoral complet du Projet Nova",
-    "description": "Feuille de route politique consolidée du Projet Nova : réforme démocratique, souveraineté, État transparent, fiscalité, économie, services publics, justice, logement, numérique et gouvernance.",
-    "docx": "documents/programme-electoral-complet-projet-nova.docx"
-  },
-  "manifeste-officiel": {
-    "title": "Manifeste officiel du Projet Nova",
-    "description": "Document de mobilisation et de référence publique : appel au peuple, mission nationale, dix engagements, serment public, vision de pays et premières mesures de mandat.",
-    "docx": "documents/manifeste-officiel-projet-nova.docx"
+    "description": "Socle supérieur du projet : Constitution, normes fondamentales, principes d’interprétation et hiérarchie normative.",
+    "tags": [
+      "constitution",
+      "normes fondamentales",
+      "souveraineté populaire"
+    ],
+    "featured": true,
+    "docx": "documents/systeme-nova-constitution-normes-fondamentales.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 929407,
+    "format": "DOCX"
   },
   "plan-maitre-consolidation": {
+    "slug": "plan-maitre-consolidation",
+    "section": "Documents maîtres",
+    "type": "Consolidation",
     "title": "Plan maître de consolidation du Projet Nova",
-    "description": "Document de travail pour consolider le corpus, corriger les contradictions, harmoniser les textes et clarifier la hiérarchie normative du Projet Nova.",
-    "docx": "documents/plan-maitre-consolidation-projet-nova.docx"
-  },
-  "constitution": {
-    "title": "Constitution du Québec — Version Projet Nova consolidée",
-    "description": "Document constitutionnel de référence du Projet Nova.",
-    "docx": "documents/constitution-du-quebec-projet-nova-consolidee.docx"
+    "description": "Document de consolidation visant à clarifier, ordonner et stabiliser l’ensemble documentaire du projet.",
+    "tags": [
+      "consolidation",
+      "cohérence",
+      "architecture documentaire"
+    ],
+    "featured": false,
+    "docx": "documents/plan-maitre-consolidation-projet-nova.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 41407,
+    "format": "DOCX"
   },
   "lois-organiques": {
-    "title": "Lois organiques du Québec — Version Projet Nova consolidées",
-    "description": "Cadre organique de l’État, des autorités indépendantes, de l’intégrité publique et de la démocratie institutionnelle.",
-    "docx": "documents/lois-organiques-du-quebec-projet-nova-consolidees.docx"
-  },
-  "lois-ordinaires": {
-    "title": "Lois ordinaires du Québec — Version Projet Nova consolidées",
-    "description": "Organisation quotidienne du droit, des services, des recours, des finances, des régions et de la vie publique.",
-    "docx": "documents/lois-ordinaires-du-quebec-projet-nova-consolidees.docx"
+    "slug": "lois-organiques",
+    "section": "Base normative",
+    "type": "Loi organique",
+    "title": "Lois organiques et architecture institutionnelle",
+    "description": "Ossature institutionnelle de l’État : pouvoirs, contrôles, transparence, responsabilité et mécanismes de protection.",
+    "tags": [
+      "lois organiques",
+      "institutions",
+      "contrôle"
+    ],
+    "featured": false,
+    "docx": "documents/lois-organiques-architecture-institutionnelle.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 911659,
+    "format": "DOCX"
   },
   "lois-administratives": {
-    "title": "Lois administratives du Québec — Version Projet Nova consolidées",
-    "description": "Cadre administratif de l’État, de la fonction publique, des permis, des recours, de la cybersécurité et des urgences.",
-    "docx": "documents/lois-administratives-du-quebec-projet-nova-consolidees.docx"
+    "slug": "lois-administratives",
+    "section": "Base normative",
+    "type": "Loi administrative",
+    "title": "Lois administratives et fonctionnement de l’État",
+    "description": "Cadre de fonctionnement administratif : simplicité, traçabilité, accès humain, recours et responsabilité des agents.",
+    "tags": [
+      "administration",
+      "services publics",
+      "responsabilité"
+    ],
+    "featured": false,
+    "docx": "documents/lois-administratives-fonctionnement-etat.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 911024,
+    "format": "DOCX"
+  },
+  "lois-ordinaires": {
+    "slug": "lois-ordinaires",
+    "section": "Base normative",
+    "type": "Loi ordinaire",
+    "title": "Lois ordinaires et droit public opérationnel",
+    "description": "Application quotidienne des principes : économie, travail, logement, consommation, sécurité, culture, environnement et numérique.",
+    "tags": [
+      "lois ordinaires",
+      "droits",
+      "vie publique"
+    ],
+    "featured": false,
+    "docx": "documents/lois-ordinaires-droit-public-operationnel.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 909093,
+    "format": "DOCX"
   },
   "reglements": {
-    "title": "Règlements du Québec — Version Projet Nova consolidés",
-    "description": "Cadre du pouvoir réglementaire, des procédures, des contrôles, des recours et des garanties démocratiques.",
-    "docx": "documents/reglements-du-quebec-projet-nova-consolides.docx"
-  },
-  "volet-1": {
-    "title": "Volet I — Québec dans le Canada",
-    "description": "Document pratique d’application immédiate dans le cadre actuel : premier mandat, audits, transparence et préparation souveraine.",
-    "docx": "documents/volet-1-quebec-dans-le-canada-projet-nova-consolide.docx"
-  },
-  "volet-2": {
-    "title": "Volet II — Québec en transition",
-    "description": "Document pratique de passage constitutionnel, administratif et démocratique du Projet Nova.",
-    "docx": "documents/volet-2-quebec-en-transition-projet-nova-consolide.docx"
-  },
-  "volet-3": {
-    "title": "Volet III — Québec pays souverain",
-    "description": "Document de fonctionnement complet du Québec devenu pays souverain.",
-    "docx": "documents/volet-3-quebec-pays-souverain-projet-nova-consolide.docx"
-  },
-  "doctrine": {
-    "title": "Doctrine fondatrice du Projet Nova",
-    "description": "Principes directeurs, ligne politique générale et logique de refondation.",
-    "docx": "documents/doctrine-fondatrice-projet-nova.docx"
-  },
-  "version-publique": {
-    "title": "Version publique simplifiée — citoyens",
-    "description": "Présentation simplifiée du projet pour consultation citoyenne.",
-    "docx": "documents/version-publique-simplifiee-citoyens.docx"
+    "slug": "reglements",
+    "section": "Base normative",
+    "type": "Règlements",
+    "title": "Règlements et application normative",
+    "description": "Modalités techniques d’application des lois, sans création autonome de droit ou d’obligation.",
+    "tags": [
+      "règlements",
+      "application",
+      "technique"
+    ],
+    "featured": false,
+    "docx": "documents/reglements-application-normative.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 906533,
+    "format": "DOCX"
   },
   "outil-transition": {
-    "title": "Outil de transition constitutionnelle",
-    "description": "Outil technique de continuité, d’activation progressive et de suivi de transition.",
-    "docx": "documents/outil-de-transition-constitutionnelle.docx"
+    "slug": "outil-transition",
+    "section": "Transition et volets",
+    "type": "Outil de transition",
+    "title": "Outil de transition constitutionnelle et mise en œuvre",
+    "description": "Manuel opérationnel de continuité, de conversion et de sécurisation juridique pendant la transition.",
+    "tags": [
+      "transition",
+      "continuité",
+      "mise en œuvre"
+    ],
+    "featured": true,
+    "docx": "documents/outil-transition-constitutionnelle-mise-en-oeuvre.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 906968,
+    "format": "DOCX"
+  },
+  "volet-1": {
+    "slug": "volet-1",
+    "section": "Transition et volets",
+    "type": "Phase I",
+    "title": "Volet 1 — Québec dans le Canada",
+    "description": "Phase préparatoire : audits, structuration administrative et préparation sans rupture juridique.",
+    "tags": [
+      "phase I",
+      "préparation",
+      "cadre canadien"
+    ],
+    "featured": false,
+    "docx": "documents/volet-1-quebec-dans-le-canada.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 70992,
+    "format": "DOCX"
+  },
+  "volet-2": {
+    "slug": "volet-2",
+    "section": "Transition et volets",
+    "type": "Phase II",
+    "title": "Volet 2 — Québec en transition",
+    "description": "Substitution progressive, continuité des services essentiels, activation par blocs et contrôle renforcé.",
+    "tags": [
+      "phase II",
+      "transition",
+      "continuité"
+    ],
+    "featured": false,
+    "docx": "documents/volet-2-quebec-en-transition.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 938357,
+    "format": "DOCX"
+  },
+  "volet-3": {
+    "slug": "volet-3",
+    "section": "Transition et volets",
+    "type": "Phase III",
+    "title": "Volet 3 — Québec pays souverain",
+    "description": "État souverain pleinement effectif : institutions, fiscalité unique, neutralité internationale et stabilité.",
+    "tags": [
+      "phase III",
+      "souveraineté",
+      "État effectif"
+    ],
+    "featured": false,
+    "docx": "documents/volet-3-quebec-pays-souverain.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 945623,
+    "format": "DOCX"
   },
   "table-concordance": {
-    "title": "Table de concordance normative",
-    "description": "Repérage des normes, liens entre textes et contrôle de cohérence.",
-    "docx": "documents/table-de-concordance-normative.docx"
+    "slug": "table-concordance",
+    "section": "Contrôle et cohérence",
+    "type": "Contrôle normatif",
+    "title": "Table de concordance normative et outil de contrôle",
+    "description": "Matrice de cohérence reliant la Constitution, les lois, les règlements et les outils de transition.",
+    "tags": [
+      "concordance",
+      "hiérarchie",
+      "audit"
+    ],
+    "featured": false,
+    "docx": "documents/table-concordance-normative-outil-controle.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 909625,
+    "format": "DOCX"
   },
   "audit-defense": {
+    "slug": "audit-defense",
+    "section": "Contrôle et cohérence",
+    "type": "Audit",
     "title": "Audit de défense constitutionnelle",
-    "description": "Analyse des protections, des risques de contournement et des mécanismes de défense.",
-    "docx": "documents/audit-defense-constitutionnelle.docx"
+    "description": "Analyse des vecteurs d’attaque juridiques, institutionnels, économiques, médiatiques, technologiques et internationaux.",
+    "tags": [
+      "audit",
+      "défense",
+      "risques"
+    ],
+    "featured": false,
+    "docx": "documents/audit-defense-constitutionnelle.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 906794,
+    "format": "DOCX"
   },
   "registre-risques": {
+    "slug": "registre-risques",
+    "section": "Contrôle et cohérence",
+    "type": "Registre des risques",
     "title": "Registre des risques résiduels et correctifs",
-    "description": "Identification des risques restants et mesures correctives proposées.",
-    "docx": "documents/registre-risques-residuels-correctifs.docx"
+    "description": "Inventaire des risques juridiques, budgétaires, opérationnels, démocratiques, internationaux, de gouvernance et sociaux.",
+    "tags": [
+      "risques",
+      "correctifs",
+      "résilience"
+    ],
+    "featured": false,
+    "docx": "documents/registre-risques-residuels-correctifs.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 909757,
+    "format": "DOCX"
   },
-  "code-conduite-source": {
-    "title": "Code de conduite — document source",
-    "description": "Cadre d’intégrité, de responsabilité et de comportement public.",
-    "docx": "documents/code-de-conduite-document-source.docx"
+  "version-publique": {
+    "slug": "version-publique",
+    "section": "Documents publics et citoyens",
+    "type": "Version citoyenne",
+    "title": "Version publique simplifiée — citoyens",
+    "description": "Version claire et accessible pour comprendre le projet d’État sans langage technique.",
+    "tags": [
+      "citoyens",
+      "synthèse",
+      "pédagogie"
+    ],
+    "featured": true,
+    "docx": "documents/version-publique-simplifiee-citoyens.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 906540,
+    "format": "DOCX"
+  },
+  "manifeste-officiel": {
+    "slug": "manifeste-officiel",
+    "section": "Documents publics et citoyens",
+    "type": "Manifeste",
+    "title": "Manifeste officiel du Projet Nova",
+    "description": "Présentation politique publique du Projet Nova, de ses constats, de ses priorités et de son orientation générale.",
+    "tags": [
+      "manifeste",
+      "vision",
+      "public"
+    ],
+    "featured": true,
+    "docx": "documents/manifeste-officiel-projet-nova.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 909899,
+    "format": "DOCX"
+  },
+  "programme-electoral-complet": {
+    "slug": "programme-electoral-complet",
+    "section": "Documents publics et citoyens",
+    "type": "Programme",
+    "title": "Programme électoral complet du Projet Nova",
+    "description": "Programme public complet regroupant les priorités politiques et les propositions structurantes du Projet Nova.",
+    "tags": [
+      "programme",
+      "électoral",
+      "propositions"
+    ],
+    "featured": true,
+    "docx": "documents/programme-electoral-complet-projet-nova.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 940999,
+    "format": "DOCX"
+  },
+  "code-conduite": {
+    "slug": "code-conduite",
+    "section": "Gouvernance interne",
+    "type": "Code de conduite",
+    "title": "Code de conduite et gouvernance interne Nova",
+    "description": "Règles d’intégrité, de respect, de transparence, de représentation publique et de discipline interne.",
+    "tags": [
+      "éthique",
+      "gouvernance",
+      "conduite"
+    ],
+    "featured": false,
+    "docx": "documents/code-conduite-gouvernance-interne-nova.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 909368,
+    "format": "DOCX"
+  },
+  "version-technique-commentee": {
+    "slug": "version-technique-commentee",
+    "section": "Contrôle et cohérence",
+    "type": "Version technique",
+    "title": "Version technique commentée — experts et État",
+    "description": "Commentaires techniques expliquant la logique juridique interne, l’interprétation officielle et les mécanismes anti-dérive.",
+    "tags": [
+      "technique",
+      "commentaires",
+      "experts"
+    ],
+    "featured": false,
+    "docx": "documents/version-technique-commentee-experts-etat.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 22013,
+    "format": "DOCX"
   }
 }
