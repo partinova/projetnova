@@ -1,4 +1,21 @@
 {
+  "doctrine-fondatrice": {
+    "slug": "doctrine-fondatrice",
+    "section": "Documents maîtres",
+    "type": "Doctrine",
+    "title": "Doctrine fondatrice et lignes directrices fondamentales",
+    "description": "Document doctrinal de référence : principes structurants, cohérence politique, orientations générales et lignes directrices fondamentales du Projet Nova.",
+    "tags": [
+      "doctrine",
+      "principes",
+      "orientation"
+    ],
+    "featured": false,
+    "docx": "documents/doctrine-fondatrice-lignes-directrices-fondamentales.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 23292,
+    "format": "DOCX"
+  },
   "dossier-etat-complet": {
     "slug": "dossier-etat-complet",
     "section": "Documents maîtres",
@@ -33,21 +50,21 @@
     "size_bytes": 905689,
     "format": "DOCX"
   },
-  "systeme-nova": {
-    "slug": "systeme-nova",
+  "dossier-etat-technique-depot": {
+    "slug": "dossier-etat-technique-depot",
     "section": "Documents maîtres",
-    "type": "Socle supérieur",
-    "title": "Système Nova — Constitution et normes fondamentales",
-    "description": "Socle supérieur du projet : Constitution, normes fondamentales, principes d’interprétation et hiérarchie normative.",
+    "type": "Dépôt technique",
+    "title": "Dossier État — version technique de dépôt",
+    "description": "Version technique consolidée pour dépôt institutionnel, audit, analyse juridique et activation conditionnelle du corpus.",
     "tags": [
-      "constitution",
-      "normes fondamentales",
-      "souveraineté populaire"
+      "dépôt",
+      "technique",
+      "institutionnel"
     ],
-    "featured": true,
-    "docx": "documents/systeme-nova-constitution-normes-fondamentales.docx",
+    "featured": false,
+    "docx": "documents/dossier-etat-version-technique-de-depot.docx",
     "updated": "2026-06-22",
-    "size_bytes": 929407,
+    "size_bytes": 21726,
     "format": "DOCX"
   },
   "plan-maitre-consolidation": {
@@ -67,21 +84,72 @@
     "size_bytes": 41407,
     "format": "DOCX"
   },
-  "lois-organiques": {
-    "slug": "lois-organiques",
-    "section": "Base normative",
-    "type": "Loi organique",
-    "title": "Lois organiques et architecture institutionnelle",
-    "description": "Ossature institutionnelle de l’État : pouvoirs, contrôles, transparence, responsabilité et mécanismes de protection.",
+  "systeme-nova": {
+    "slug": "systeme-nova",
+    "section": "Documents maîtres",
+    "type": "Socle supérieur",
+    "title": "Système Nova — Constitution et normes fondamentales",
+    "description": "Socle supérieur du projet : Constitution, normes fondamentales, principes d’interprétation et hiérarchie normative.",
     "tags": [
-      "lois organiques",
-      "institutions",
-      "contrôle"
+      "constitution",
+      "normes fondamentales",
+      "souveraineté populaire"
     ],
-    "featured": false,
-    "docx": "documents/lois-organiques-architecture-institutionnelle.docx",
+    "featured": true,
+    "docx": "documents/systeme-nova-constitution-normes-fondamentales.docx",
     "updated": "2026-06-22",
-    "size_bytes": 911659,
+    "size_bytes": 929407,
+    "format": "DOCX"
+  },
+  "manifeste-officiel": {
+    "slug": "manifeste-officiel",
+    "section": "Documents publics et citoyens",
+    "type": "Manifeste",
+    "title": "Manifeste officiel du Projet Nova",
+    "description": "Présentation politique publique du Projet Nova, de ses constats, de ses priorités et de son orientation générale.",
+    "tags": [
+      "manifeste",
+      "vision",
+      "public"
+    ],
+    "featured": true,
+    "docx": "documents/manifeste-officiel-projet-nova.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 909899,
+    "format": "DOCX"
+  },
+  "programme-electoral-complet": {
+    "slug": "programme-electoral-complet",
+    "section": "Documents publics et citoyens",
+    "type": "Programme",
+    "title": "Programme électoral complet du Projet Nova",
+    "description": "Programme public complet regroupant les priorités politiques et les propositions structurantes du Projet Nova.",
+    "tags": [
+      "programme",
+      "électoral",
+      "propositions"
+    ],
+    "featured": true,
+    "docx": "documents/programme-electoral-complet-projet-nova.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 940999,
+    "format": "DOCX"
+  },
+  "version-publique": {
+    "slug": "version-publique",
+    "section": "Documents publics et citoyens",
+    "type": "Version citoyenne",
+    "title": "Version publique simplifiée — citoyens",
+    "description": "Version claire et accessible pour comprendre le projet d’État sans langage technique.",
+    "tags": [
+      "citoyens",
+      "synthèse",
+      "pédagogie"
+    ],
+    "featured": true,
+    "docx": "documents/version-publique-simplifiee-citoyens.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 906540,
     "format": "DOCX"
   },
   "lois-administratives": {
@@ -116,6 +184,23 @@
     "docx": "documents/lois-ordinaires-droit-public-operationnel.docx",
     "updated": "2026-06-22",
     "size_bytes": 909093,
+    "format": "DOCX"
+  },
+  "lois-organiques": {
+    "slug": "lois-organiques",
+    "section": "Base normative",
+    "type": "Loi organique",
+    "title": "Lois organiques et architecture institutionnelle",
+    "description": "Ossature institutionnelle de l’État : pouvoirs, contrôles, transparence, responsabilité et mécanismes de protection.",
+    "tags": [
+      "lois organiques",
+      "institutions",
+      "contrôle"
+    ],
+    "featured": false,
+    "docx": "documents/lois-organiques-architecture-institutionnelle.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 911659,
     "format": "DOCX"
   },
   "reglements": {
@@ -203,23 +288,6 @@
     "size_bytes": 945623,
     "format": "DOCX"
   },
-  "table-concordance": {
-    "slug": "table-concordance",
-    "section": "Contrôle et cohérence",
-    "type": "Contrôle normatif",
-    "title": "Table de concordance normative et outil de contrôle",
-    "description": "Matrice de cohérence reliant la Constitution, les lois, les règlements et les outils de transition.",
-    "tags": [
-      "concordance",
-      "hiérarchie",
-      "audit"
-    ],
-    "featured": false,
-    "docx": "documents/table-concordance-normative-outil-controle.docx",
-    "updated": "2026-06-22",
-    "size_bytes": 909625,
-    "format": "DOCX"
-  },
   "audit-defense": {
     "slug": "audit-defense",
     "section": "Contrôle et cohérence",
@@ -254,72 +322,38 @@
     "size_bytes": 909757,
     "format": "DOCX"
   },
-  "version-publique": {
-    "slug": "version-publique",
-    "section": "Documents publics et citoyens",
-    "type": "Version citoyenne",
-    "title": "Version publique simplifiée — citoyens",
-    "description": "Version claire et accessible pour comprendre le projet d’État sans langage technique.",
+  "table-concordance-simple": {
+    "slug": "table-concordance-simple",
+    "section": "Contrôle et cohérence",
+    "type": "Table de concordance",
+    "title": "Table de concordance normative",
+    "description": "Document de liaison entre Constitution, lois, règlements et documents de transition pour vérifier la cohérence du corpus.",
     "tags": [
-      "citoyens",
-      "synthèse",
-      "pédagogie"
-    ],
-    "featured": true,
-    "docx": "documents/version-publique-simplifiee-citoyens.docx",
-    "updated": "2026-06-22",
-    "size_bytes": 906540,
-    "format": "DOCX"
-  },
-  "manifeste-officiel": {
-    "slug": "manifeste-officiel",
-    "section": "Documents publics et citoyens",
-    "type": "Manifeste",
-    "title": "Manifeste officiel du Projet Nova",
-    "description": "Présentation politique publique du Projet Nova, de ses constats, de ses priorités et de son orientation générale.",
-    "tags": [
-      "manifeste",
-      "vision",
-      "public"
-    ],
-    "featured": true,
-    "docx": "documents/manifeste-officiel-projet-nova.docx",
-    "updated": "2026-06-22",
-    "size_bytes": 909899,
-    "format": "DOCX"
-  },
-  "programme-electoral-complet": {
-    "slug": "programme-electoral-complet",
-    "section": "Documents publics et citoyens",
-    "type": "Programme",
-    "title": "Programme électoral complet du Projet Nova",
-    "description": "Programme public complet regroupant les priorités politiques et les propositions structurantes du Projet Nova.",
-    "tags": [
-      "programme",
-      "électoral",
-      "propositions"
-    ],
-    "featured": true,
-    "docx": "documents/programme-electoral-complet-projet-nova.docx",
-    "updated": "2026-06-22",
-    "size_bytes": 940999,
-    "format": "DOCX"
-  },
-  "code-conduite": {
-    "slug": "code-conduite",
-    "section": "Gouvernance interne",
-    "type": "Code de conduite",
-    "title": "Code de conduite et gouvernance interne Nova",
-    "description": "Règles d’intégrité, de respect, de transparence, de représentation publique et de discipline interne.",
-    "tags": [
-      "éthique",
-      "gouvernance",
-      "conduite"
+      "concordance",
+      "normes",
+      "contrôle"
     ],
     "featured": false,
-    "docx": "documents/code-conduite-gouvernance-interne-nova.docx",
+    "docx": "documents/table-concordance-normative.docx",
     "updated": "2026-06-22",
-    "size_bytes": 909368,
+    "size_bytes": 22665,
+    "format": "DOCX"
+  },
+  "table-concordance": {
+    "slug": "table-concordance",
+    "section": "Contrôle et cohérence",
+    "type": "Contrôle normatif",
+    "title": "Table de concordance normative et outil de contrôle",
+    "description": "Matrice de cohérence reliant la Constitution, les lois, les règlements et les outils de transition.",
+    "tags": [
+      "concordance",
+      "hiérarchie",
+      "audit"
+    ],
+    "featured": false,
+    "docx": "documents/table-concordance-normative-outil-controle.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 909625,
     "format": "DOCX"
   },
   "version-technique-commentee": {
@@ -337,6 +371,23 @@
     "docx": "documents/version-technique-commentee-experts-etat.docx",
     "updated": "2026-06-22",
     "size_bytes": 22013,
+    "format": "DOCX"
+  },
+  "code-conduite": {
+    "slug": "code-conduite",
+    "section": "Gouvernance interne",
+    "type": "Code de conduite",
+    "title": "Code de conduite et gouvernance interne Nova",
+    "description": "Règles d’intégrité, de respect, de transparence, de représentation publique et de discipline interne.",
+    "tags": [
+      "éthique",
+      "gouvernance",
+      "conduite"
+    ],
+    "featured": false,
+    "docx": "documents/code-conduite-gouvernance-interne-nova.docx",
+    "updated": "2026-06-22",
+    "size_bytes": 909368,
     "format": "DOCX"
   }
 }
