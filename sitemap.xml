@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.partinova.ca/</loc></url>
-  <url><loc>https://www.partinova.ca/vision.html</loc></url>
-  <url><loc>https://www.partinova.ca/programme.html</loc></url>
-  <url><loc>https://www.partinova.ca/constitution.html</loc></url>
-  <url><loc>https://www.partinova.ca/transition.html</loc></url>
-  <url><loc>https://www.partinova.ca/documents.html</loc></url>
-  <url><loc>https://www.partinova.ca/equipe.html</loc></url>
-  <url><loc>https://www.partinova.ca/participer.html</loc></url>
-  <url><loc>https://www.partinova.ca/contact.html</loc></url>
-  <url><loc>https://www.partinova.ca/actualites.html</loc></url>
-  <url><loc>https://www.partinova.ca/propositions.html</loc></url>
-  <url><loc>https://www.partinova.ca/visionneuse.html</loc></url>
+  <url><loc>https://www.partinova.ca/</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/vision.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/programme.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/documents.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/visionneuse.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/constitution.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/transition.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/equipe.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/propositions.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/participer.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/contact.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/actualites.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/code-conduite.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/confidentialite.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/avis-legal.html</loc><lastmod>2026-06-22</lastmod></url>
+  <url><loc>https://www.partinova.ca/accessibilite.html</loc><lastmod>2026-06-22</lastmod></url>
 </urlset>

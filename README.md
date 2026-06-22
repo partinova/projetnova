@@ -1,21 +1,21 @@
-# Projet Nova — site web professionnel
+# Projet Nova — Site officiel professionnel
 
-Version statique prête pour publication sur GitHub Pages.
+Version : 20260622
 
-## Mise à jour incluse
+## Mise en ligne GitHub Pages
 
-- Ajout du Dossier État — Corpus institutionnel complet du Québec.
-- Mise à jour du Système Nova — Constitution et normes fondamentales.
-- Mise à jour du Manifeste officiel du Projet Nova.
-- Mise à jour du Plan maître de consolidation du Projet Nova.
-- Mise à jour du Programme électoral complet du Projet Nova.
-- Conservation des documents Word seulement : les PDF ont été retirés du site.
-- Page Documents mise à jour avec visionnement en ligne et téléchargement Word.
+1. Décompresser ce ZIP.
+2. Téléverser **tout le contenu** à la racine du dépôt GitHub Pages.
+3. Conserver le fichier `CNAME` si le domaine utilisé est `www.partinova.ca`.
+4. Vérifier les pages : `index.html`, `documents.html`, `visionneuse.html?doc=systeme-nova`, `programme.html`, `equipe.html`.
 
-## Visionneuse
+## Ajouter un document Word
 
-La visionneuse utilise les fichiers DOCX publiés sur le domaine public `https://www.partinova.ca/` avec la visionneuse Office en ligne. Elle fonctionne après publication sur GitHub Pages et résolution correcte du domaine.
+1. Placer le `.docx` dans `/documents/`.
+2. Ajouter sa fiche dans `/data/documents-word-only.json`.
+3. Ajouter une carte dans `documents.html` si la page doit le présenter directement.
+4. Tester `visionneuse.html?doc=SLUG&v=20260622`.
 
-## Publication rapide
+## Note importante
 
-Déposer tout le contenu du dossier à la racine du dépôt GitHub Pages, puis attendre le déploiement.
+La visionneuse Word utilise `view.officeapps.live.com`. Elle fonctionne seulement lorsque le fichier DOCX est accessible publiquement sur le web.
