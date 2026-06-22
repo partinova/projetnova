@@ -11,7 +11,7 @@ Site statique prêt pour GitHub Pages.
 
 ## Documents
 
-La bibliothèque publie uniquement les fichiers Word `.docx`. Les PDF ne sont pas inclus dans cette version.
+La bibliothèque publie les fichiers PDF et Word `.docx`. Les PDF servent à la lecture directe en ligne; les fichiers Word servent au téléchargement et à la modification.
 
 ## Pages principales
 
@@ -24,3 +24,6 @@ La bibliothèque publie uniquement les fichiers Word `.docx`. Les PDF ne sont pa
 - Visionneuse : `visionneuse.html`
 - Équipe : `equipe.html`
 - Contact : `contact.html`
+
+
+Réseaux sociaux : Facebook officiel et TikTok officiel du Projet Nova.
