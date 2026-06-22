@@ -38,3 +38,20 @@ img{max-width:100%;display:block}
 .topbar-social a{display:inline-flex;align-items:center}
 .topbar-social a+a{position:relative;padding-left:18px;margin-left:4px}
 .topbar-social a+a:before{content:"•";position:absolute;left:0;color:#8aa1b6;text-decoration:none}
+
+
+/* Ajustements publics Projet Nova */
+.topbar-social{display:flex;align-items:center;justify-content:flex-end;gap:20px;white-space:nowrap;flex-wrap:wrap}
+.topbar-social a{display:inline-flex;align-items:center}
+.topbar-social a+a{position:relative;padding-left:18px;margin-left:4px}
+.topbar-social a+a:before{content:"•";position:absolute;left:0;color:#8aa1b6;text-decoration:none}
+.faq-list{display:grid;gap:14px;max-width:980px}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:18px;padding:0;box-shadow:0 10px 28px rgba(6,26,47,.05);overflow:hidden}
+.faq-item summary{cursor:pointer;font-weight:900;color:var(--navy);padding:20px 24px;list-style:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:"+";float:right;color:var(--cyan-dark);font-weight:900}
+.faq-item[open] summary:after{content:"–"}
+.faq-item p{padding:0 24px 22px;margin:0;color:var(--muted);line-height:1.65}
+.faq-blocks div{border-left:4px solid var(--cyan)}
+.compact-card .card-actions,.doc-card .card-actions{align-items:center}
+@media (max-width:700px){.topbar-inner{align-items:flex-start;gap:10px}.topbar-social{gap:10px;justify-content:flex-start}.topbar-social a+a{padding-left:14px;margin-left:0}.hero-actions,.card-actions,.cta-actions{align-items:stretch}.hero-actions .btn,.card-actions .btn,.cta-actions .btn{width:100%}}

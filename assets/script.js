@@ -12,7 +12,7 @@
     const cards=[...library.querySelectorAll('.library-card')];
     const counter=document.querySelector('[data-doc-count]');
     let filter='all';
-    function apply(){const q=(input?.value||'').toLowerCase().trim();let visible=0;cards.forEach(card=>{const okFilter=filter==='all'||card.dataset.section===filter;const okSearch=!q||(card.dataset.search||'').includes(q);const show=okFilter&&okSearch;card.style.display=show?'':'none';if(show) visible++;});if(counter) counter.textContent=visible+' document'+(visible>1?'s':'')+' Word';}
+    function apply(){const q=(input?.value||'').toLowerCase().trim();let visible=0;cards.forEach(card=>{const okFilter=filter==='all'||card.dataset.section===filter;const okSearch=!q||(card.dataset.search||'').includes(q);const show=okFilter&&okSearch;card.style.display=show?'':'none';if(show) visible++;});if(counter) counter.textContent=visible+' document'+(visible>1?'s':'');}
     input&&input.addEventListener('input',apply);
     chips.forEach(chip=>chip.addEventListener('click',()=>{chips.forEach(c=>c.classList.remove('active'));chip.classList.add('active');filter=chip.dataset.filter;apply();}));
   }
@@ -25,11 +25,12 @@
     const desc=document.getElementById('viewerDescription');
     const type=document.getElementById('viewerType');
     const dl=document.getElementById('downloadDoc');
+    const dlPdf=document.getElementById('downloadPdf');
     const openNew=document.getElementById('openNew');
     const params=new URLSearchParams(location.search);
     const first=Object.keys(docs)[0];
     function absolute(path){return new URL(path, location.origin + location.pathname.replace(/[^\/]*$/,'')).href;}
-    function load(slug){const d=docs[slug]||docs[first]; if(!d) return; if(select) select.value=d.slug; const fileUrl=absolute(d.docx); const viewer='https://view.officeapps.live.com/op/embed.aspx?src='+encodeURIComponent(fileUrl); if(frame) frame.src=viewer; if(name) name.textContent=d.title; if(desc) desc.textContent=d.description; if(type) type.textContent=d.type; if(dl) dl.href=d.docx; if(openNew) openNew.href=viewer; if(history.replaceState) history.replaceState(null,'','?doc='+encodeURIComponent(d.slug));}
+    function load(slug){const d=docs[slug]||docs[first]; if(!d) return; if(select) select.value=d.slug; const pdfUrl=d.pdf?absolute(d.pdf):''; const wordUrl=absolute(d.docx); const wordViewer='https://view.officeapps.live.com/op/embed.aspx?src='+encodeURIComponent(wordUrl); const viewer=pdfUrl||wordViewer; if(frame) frame.src=viewer; if(name) name.textContent=d.title; if(desc) desc.textContent=d.description; if(type) type.textContent=d.type; if(dl) dl.href=d.docx; if(dlPdf){ if(d.pdf){dlPdf.href=d.pdf; dlPdf.style.display='';} else {dlPdf.style.display='none';}} if(openNew) openNew.href=viewer; if(history.replaceState) history.replaceState(null,'','?doc='+encodeURIComponent(d.slug));}
     select&&select.addEventListener('change',()=>load(select.value));
     load(params.get('doc')||first);
   }
