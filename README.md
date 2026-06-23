@@ -1,5 +1,8 @@
 # Projet Nova — site public
 
-Version publique avec documents accessibles seulement : résumé 1 page, dépliant public, FAQ citoyenne, manifeste, résumé exécutif, programme, version citoyenne, dossier de presse et code de conduite.
+Version générée selon le Plan de publication officiel du site web du Projet Nova.
 
-Les documents techniques, stratégiques ou internes ne sont pas inclus dans ce paquet public.
+Documents publics publiés : 10.
+Documents internes et stratégiques : exclus du site public.
+
+Domaine : www.partinova.ca
