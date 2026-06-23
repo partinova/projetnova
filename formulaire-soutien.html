@@ -46,14 +46,20 @@
 </section>
 <section class="section">
   <div class="container contact-layout">
-    <form class="form-card nova-online-form" id="formulaireSoutien" action="https://formsubmit.co/officiellenovaparti@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Formulaire de soutien et préadhésion - Projet Nova">
+    <form class="form-card nova-online-form" id="formulaireSoutien" action="https://formsubmit.co/9fcd011ed8377d4a94621099b49ee300" method="POST">
+
+      <input type="hidden" name="Formulaire" value="Soutien et préadhésion Projet Nova">
+      <input type="hidden" name="Organisation" value="Équipe Parti Nova">
+      <input type="hidden" name="Courriel du parti" value="officiellenovaparti@gmail.com">
+      <input type="hidden" name="Sujet" value="Participation">
+      <input type="hidden" name="_subject" value="Participation — formulaire de soutien et préadhésion Projet Nova">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_next" value="https://www.partinova.ca/merci-formulaire.html">
-      <input type="hidden" name="_autoresponse" value="Merci d’avoir rempli le formulaire de soutien et de préadhésion du Projet Nova. Une copie de votre soumission vous est transmise par courriel. Ce formulaire ne remplace pas les fiches officielles exigées par Élections Québec.">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Merci d’avoir rempli le formulaire de soutien et de préadhésion du Projet Nova. Nous avons bien reçu votre demande. Une copie des informations soumises peut aussi vous être transmise par courriel. Ce formulaire ne remplace pas les fiches officielles exigées par Élections Québec.">
       <input type="hidden" name="_cc" id="formCopyEmail" value="">
       <input type="hidden" name="_replyto" id="formReplyTo" value="">
-      <textarea name="Résumé complet du formulaire" id="formSummary" hidden></textarea>
+<textarea name="Résumé complet du formulaire" id="formSummary" hidden></textarea>
 
       <div class="form-section-head"><span class="pill">Section A</span><h2>Identification</h2></div>
       <div class="form-grid-2">
@@ -148,34 +154,55 @@
   <div class="container footer-bottom"><span>© Projet Nova. Tous droits réservés.</span><span>Site statique publié avec GitHub Pages.</span></div>
 </footer>
 <script src="assets/script.js" defer></script>
+
+
 <script>
 (function(){
   const form = document.getElementById('formulaireSoutien');
   if(!form) return;
-  const today = new Date().toISOString().slice(0,10);
+
   const dateField = document.getElementById('dateSignature');
-  if(dateField && !dateField.value) dateField.value = today;
-  form.addEventListener('submit', function(event){
-    const email = document.getElementById('email').value.trim();
-    const name = document.getElementById('nomLegal').value.trim();
-    document.getElementById('formCopyEmail').value = email;
-    document.getElementById('formReplyTo').value = email;
-    const data = new FormData(form);
-    const lines = [];
-    lines.push('FORMULAIRE DE SOUTIEN ET DE PRÉADHÉSION — PROJET NOVA');
-    lines.push('Nom : ' + name);
-    lines.push('Courriel : ' + email);
-    lines.push('Date d’envoi : ' + new Date().toLocaleString('fr-CA'));
-    lines.push('');
-    for (const [key, value] of data.entries()) {
-      if(key.startsWith('_') || key === 'Résumé complet du formulaire') continue;
-      if(String(value).trim()) lines.push(key + ' : ' + value);
+  if(dateField && !dateField.value){
+    dateField.value = new Date().toISOString().slice(0,10);
+  }
+
+  form.addEventListener('submit', function(){
+    const emailField = document.getElementById('email');
+    const nameField = document.getElementById('nomLegal');
+    const status = document.getElementById('formStatus');
+    const copyField = document.getElementById('formCopyEmail');
+    const replyField = document.getElementById('formReplyTo');
+    const summaryField = document.getElementById('formSummary');
+
+    const email = emailField ? emailField.value.trim() : '';
+    const name = nameField ? nameField.value.trim() : '';
+
+    if(copyField) copyField.value = email;
+    if(replyField) replyField.value = email;
+
+    if(summaryField){
+      const data = new FormData(form);
+      const lines = [];
+      lines.push('FORMULAIRE DE SOUTIEN ET DE PRÉADHÉSION — PROJET NOVA');
+      lines.push('Formulaire : Soutien et préadhésion Projet Nova');
+      lines.push('Organisation : Équipe Parti Nova');
+      lines.push('Courriel du parti : officiellenovaparti@gmail.com');
+      lines.push('Sujet : Participation');
+      lines.push('Nom : ' + name);
+      lines.push('Courriel : ' + email);
+      lines.push('Date d’envoi : ' + new Date().toLocaleString('fr-CA'));
+      lines.push('');
+      for (const [key, value] of data.entries()) {
+        if(key.startsWith('_') || key === 'Résumé complet du formulaire') continue;
+        if(String(value).trim()) lines.push(key + ' : ' + value);
+      }
+      summaryField.value = lines.join('\\n');
     }
-    document.getElementById('formSummary').value = lines.join('
-');
-    document.getElementById('formStatus').textContent = 'Envoi en cours... une copie sera envoyée au courriel indiqué.';
+
+    if(status){
+      status.textContent = 'Envoi en cours... une copie sera envoyée au courriel indiqué.';
+    }
   });
 })();
 </script>
-
 </body></html>
