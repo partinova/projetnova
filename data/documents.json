@@ -1,208 +1,216 @@
 {
-  "resume-officiel-1-page-systeme-nova": {
-    "section": "Présentation publique",
-    "type": "Résumé 1 page",
+  "resume-1-page-projet-nova-addendum-1": {
+    "slug": "resume-1-page-projet-nova-addendum-1",
     "title": "Résumé officiel 1 page du Système Nova",
-    "description": "Document le plus court pour comprendre rapidement la mission, les 12 piliers, la méthode Nova et les premiers jours.",
+    "type": "Résumé 1 page",
+    "section": "À lire en premier",
+    "priority": "1",
+    "description": "Une présentation rapide du Projet Nova et de ses priorités principales. À lire en premier pour comprendre l’essentiel en quelques minutes.",
     "tags": [
       "résumé",
+      "priorité",
       "citoyens",
-      "priorité"
+      "addendum 1"
     ],
     "featured": true,
-    "docx": "documents/resume-officiel-1-page-systeme-nova.docx",
-    "pdf": "documents/resume-officiel-1-page-systeme-nova.pdf",
-    "priority": "Très haute",
-    "docx_size_bytes": 899620,
-    "pdf_size_bytes": 57802,
-    "slug": "resume-officiel-1-page-systeme-nova",
-    "updated": "2026-06-22",
+    "pdf": "documents/resume-1-page-projet-nova-addendum-1.pdf",
+    "docx": "documents/resume-1-page-projet-nova-addendum-1.docx",
+    "pdf_size_bytes": 38924,
+    "docx_size_bytes": 37835,
     "formats": [
       "PDF",
       "DOCX"
     ],
     "format": "PDF + DOCX",
-    "size_bytes": 899620
+    "updated": "2026-06-23",
+    "search": "résumé officiel 1 page du système nova une présentation rapide du projet nova et de ses priorités principales. à lire en premier pour comprendre l’essentiel en quelques minutes. à lire en premier résumé priorité citoyens addendum 1"
   },
   "depliant-public-projet-nova": {
-    "section": "Présentation publique",
-    "type": "Dépliant public",
+    "slug": "depliant-public-projet-nova",
     "title": "Dépliant public 4 pages du Projet Nova",
-    "description": "Présentation générale du projet : mission, 12 piliers, changements concrets et appel aux citoyens.",
+    "type": "Dépliant public",
+    "section": "Présentation publique",
+    "priority": "2",
+    "description": "Un document court, clair et diffusable qui présente la mission, les piliers et les changements concrets proposés par Nova.",
     "tags": [
       "dépliant",
       "présentation",
       "citoyens"
     ],
     "featured": true,
-    "docx": "documents/depliant-public-4-pages-projet-nova.docx",
-    "pdf": "documents/depliant-public-4-pages-projet-nova.pdf",
-    "priority": "Très haute",
-    "docx_size_bytes": 902721,
+    "pdf": "documents/depliant-public-projet-nova.pdf",
+    "docx": "documents/depliant-public-projet-nova.docx",
     "pdf_size_bytes": 99646,
-    "slug": "depliant-public-projet-nova",
-    "updated": "2026-06-22",
+    "docx_size_bytes": 902721,
     "formats": [
       "PDF",
       "DOCX"
     ],
     "format": "PDF + DOCX",
-    "size_bytes": 902721
+    "updated": "2026-06-23",
+    "search": "dépliant public 4 pages du projet nova un document court, clair et diffusable qui présente la mission, les piliers et les changements concrets proposés par nova. présentation publique dépliant présentation citoyens"
   },
-  "faq-citoyenne-officielle": {
-    "section": "FAQ citoyenne",
-    "type": "FAQ officielle",
-    "title": "FAQ citoyenne officielle du Projet Nova",
-    "description": "Réponses aux questions fréquentes des citoyens : identité, démocratie, souveraineté, économie, services, immigration, numérique et gouvernance.",
-    "tags": [
-      "FAQ",
-      "questions",
-      "citoyens"
-    ],
-    "featured": true,
-    "docx": "documents/faq-citoyenne-officielle-projet-nova.docx",
-    "pdf": "documents/faq-citoyenne-officielle-projet-nova.pdf",
-    "priority": "Très haute",
-    "docx_size_bytes": 917850,
-    "pdf_size_bytes": 639772,
-    "slug": "faq-citoyenne-officielle",
-    "updated": "2026-06-22",
-    "formats": [
-      "PDF",
-      "DOCX"
-    ],
-    "format": "PDF + DOCX",
-    "size_bytes": 917850
-  },
-  "manifeste-officiel": {
-    "section": "Vision politique",
-    "type": "Manifeste",
+  "manifeste-officiel-projet-nova-addendum-1": {
+    "slug": "manifeste-officiel-projet-nova-addendum-1",
     "title": "Manifeste officiel du Projet Nova",
-    "description": "Document public de référence présentant l’identité, la vision, les engagements et le ton politique du Projet Nova.",
+    "type": "Manifeste officiel",
+    "section": "Comprendre la vision",
+    "priority": "3",
+    "description": "Le manifeste présente la vision politique du Projet Nova : souveraineté populaire, transparence, responsabilité, défense du français et reprise de contrôle démocratique.",
     "tags": [
       "manifeste",
       "vision",
-      "identité"
+      "identité",
+      "addendum 1"
     ],
     "featured": true,
-    "docx": "documents/manifeste-officiel-projet-nova.docx",
-    "pdf": "documents/manifeste-officiel-projet-nova.pdf",
-    "priority": "Très haute",
-    "docx_size_bytes": 909899,
-    "pdf_size_bytes": 240367,
-    "slug": "manifeste-officiel",
-    "updated": "2026-06-22",
+    "pdf": "documents/manifeste-officiel-projet-nova-addendum-1.pdf",
+    "docx": "documents/manifeste-officiel-projet-nova-addendum-1.docx",
+    "pdf_size_bytes": 290819,
+    "docx_size_bytes": 912224,
     "formats": [
       "PDF",
       "DOCX"
     ],
     "format": "PDF + DOCX",
-    "size_bytes": 909899
+    "updated": "2026-06-23",
+    "search": "manifeste officiel du projet nova le manifeste présente la vision politique du projet nova : souveraineté populaire, transparence, responsabilité, défense du français et reprise de contrôle démocratique. comprendre la vision manifeste vision identité addendum 1"
   },
-  "resume-executif-systeme-nova": {
-    "section": "Présentation publique",
-    "type": "Résumé exécutif",
-    "title": "Résumé exécutif officiel du Système Nova",
-    "description": "Guide de lecture plus complet présentant l’architecture du Système Nova, ses piliers, ses documents et ses priorités publiques.",
+  "faq-citoyenne-projet-nova-addendum-1": {
+    "slug": "faq-citoyenne-projet-nova-addendum-1",
+    "title": "FAQ citoyenne officielle du Projet Nova",
+    "type": "FAQ citoyenne",
+    "section": "Questions fréquentes",
+    "priority": "4",
+    "description": "La FAQ répond aux principales questions du public sur Nova : souveraineté, vote, immigration, économie, sécurité, services publics, numérique, police, armée et gouvernance.",
     "tags": [
-      "résumé exécutif",
-      "système nova",
-      "architecture"
+      "FAQ",
+      "questions",
+      "citoyens",
+      "addendum 1"
     ],
     "featured": true,
-    "docx": "documents/resume-executif-officiel-systeme-nova.docx",
-    "pdf": "documents/resume-executif-officiel-systeme-nova.pdf",
-    "priority": "Haute",
-    "docx_size_bytes": 907481,
-    "pdf_size_bytes": 256041,
-    "slug": "resume-executif-systeme-nova",
-    "updated": "2026-06-22",
+    "pdf": "documents/faq-citoyenne-projet-nova-addendum-1.pdf",
+    "docx": "documents/faq-citoyenne-projet-nova-addendum-1.docx",
+    "pdf_size_bytes": 670783,
+    "docx_size_bytes": 920491,
     "formats": [
       "PDF",
       "DOCX"
     ],
     "format": "PDF + DOCX",
-    "size_bytes": 907481
+    "updated": "2026-06-23",
+    "search": "faq citoyenne officielle du projet nova la faq répond aux principales questions du public sur nova : souveraineté, vote, immigration, économie, sécurité, services publics, numérique, police, armée et gouvernance. questions fréquentes faq questions citoyens addendum 1"
   },
-  "programme-electoral-complet": {
-    "section": "Programme",
-    "type": "Programme électoral",
+  "programme-electoral-projet-nova-addendum-1": {
+    "slug": "programme-electoral-projet-nova-addendum-1",
     "title": "Programme électoral complet du Projet Nova",
-    "description": "Document public de programme présentant les priorités, engagements et mesures structurantes du Projet Nova.",
+    "type": "Programme électoral",
+    "section": "Approfondir",
+    "priority": "5",
+    "description": "Le programme électoral complet expose les engagements du Projet Nova et la méthode proposée pour un premier mandat.",
     "tags": [
       "programme",
       "engagements",
-      "élections"
+      "élections",
+      "addendum 1"
     ],
-    "featured": true,
-    "docx": "documents/programme-electoral-complet-projet-nova.docx",
-    "pdf": "documents/programme-electoral-complet-projet-nova.pdf",
-    "priority": "Haute",
-    "docx_size_bytes": 940999,
-    "pdf_size_bytes": 1561959,
-    "slug": "programme-electoral-complet",
-    "updated": "2026-06-22",
+    "featured": false,
+    "pdf": "documents/programme-electoral-projet-nova-addendum-1.pdf",
+    "docx": "documents/programme-electoral-projet-nova-addendum-1.docx",
+    "pdf_size_bytes": 1588345,
+    "docx_size_bytes": 943549,
     "formats": [
       "PDF",
       "DOCX"
     ],
     "format": "PDF + DOCX",
-    "size_bytes": 940999
+    "updated": "2026-06-23",
+    "search": "programme électoral complet du projet nova le programme électoral complet expose les engagements du projet nova et la méthode proposée pour un premier mandat. approfondir programme engagements élections addendum 1"
   },
-  "version-publique": {
-    "section": "Présentation publique",
-    "type": "Version citoyenne",
-    "title": "Version publique simplifiée — citoyens",
-    "description": "Version claire et accessible pour comprendre les grandes lignes du projet sans entrer dans les détails techniques.",
+  "resume-executif-systeme-nova-addendum-1": {
+    "slug": "resume-executif-systeme-nova-addendum-1",
+    "title": "Résumé exécutif officiel du Système Nova",
+    "type": "Résumé exécutif",
+    "section": "Approfondir",
+    "priority": "6",
+    "description": "Le résumé exécutif présente la structure du Système Nova, ses piliers, son architecture documentaire et ses priorités d’action.",
     "tags": [
-      "citoyens",
-      "simplifié",
-      "vulgarisation"
+      "résumé exécutif",
+      "architecture",
+      "système nova",
+      "addendum 1"
     ],
-    "featured": true,
-    "docx": "documents/version-publique-simplifiee-citoyens.docx",
-    "pdf": "documents/version-publique-simplifiee-citoyens.pdf",
-    "priority": "Haute",
-    "docx_size_bytes": 906540,
-    "pdf_size_bytes": 172282,
-    "slug": "version-publique",
-    "updated": "2026-06-22",
+    "featured": false,
+    "pdf": "documents/resume-executif-systeme-nova-addendum-1.pdf",
+    "docx": "documents/resume-executif-systeme-nova-addendum-1.docx",
+    "pdf_size_bytes": 285336,
+    "docx_size_bytes": 910004,
     "formats": [
       "PDF",
       "DOCX"
     ],
     "format": "PDF + DOCX",
-    "size_bytes": 906540
+    "updated": "2026-06-23",
+    "search": "résumé exécutif officiel du système nova le résumé exécutif présente la structure du système nova, ses piliers, son architecture documentaire et ses priorités d’action. approfondir résumé exécutif architecture système nova addendum 1"
   },
-  "dossier-presse-officiel": {
-    "section": "Médias / Presse",
-    "type": "Dossier de presse",
+  "dossier-presse-projet-nova-addendum-1": {
+    "slug": "dossier-presse-projet-nova-addendum-1",
     "title": "Dossier de presse officiel du Projet Nova",
-    "description": "Document destiné aux médias : présentation, éléments de langage, angles d’entrevue, questions rapides et synthèse publique.",
+    "type": "Dossier de presse",
+    "section": "Médias / Presse",
+    "priority": "7",
+    "description": "Document destiné aux médias, journalistes, entrevues et présentations publiques. Il contient les messages clés, angles d’entrevue et citations officielles.",
     "tags": [
       "presse",
       "médias",
-      "communication"
+      "communication",
+      "addendum 1"
     ],
     "featured": false,
-    "docx": "documents/dossier-de-presse-officiel-projet-nova.docx",
-    "pdf": "documents/dossier-de-presse-officiel-projet-nova.pdf",
-    "priority": "Moyenne",
-    "docx_size_bytes": 909022,
-    "pdf_size_bytes": 233501,
-    "slug": "dossier-presse-officiel",
-    "updated": "2026-06-22",
+    "pdf": "documents/dossier-presse-projet-nova-addendum-1.pdf",
+    "docx": "documents/dossier-presse-projet-nova-addendum-1.docx",
+    "pdf_size_bytes": 265460,
+    "docx_size_bytes": 911517,
     "formats": [
       "PDF",
       "DOCX"
     ],
     "format": "PDF + DOCX",
-    "size_bytes": 909022
+    "updated": "2026-06-23",
+    "search": "dossier de presse officiel du projet nova document destiné aux médias, journalistes, entrevues et présentations publiques. il contient les messages clés, angles d’entrevue et citations officielles. médias / presse presse médias communication addendum 1"
   },
-  "code-conduite-nova": {
-    "section": "Gouvernance publique",
-    "type": "Code de conduite",
+  "addendum-correctif-1-police-armee-nominations": {
+    "slug": "addendum-correctif-1-police-armee-nominations",
+    "title": "Addendum correctif no 1 — Police, armée et nominations",
+    "type": "Mise à jour officielle",
+    "section": "Mises à jour",
+    "priority": "8",
+    "description": "Mise à jour officielle à conserver dans une section historique ou “Mises à jour”.",
+    "tags": [
+      "addendum",
+      "mise à jour",
+      "institutions"
+    ],
+    "featured": false,
+    "pdf": "documents/addendum-correctif-1-police-armee-nominations-projet-nova.pdf",
+    "docx": "documents/addendum-correctif-1-police-armee-nominations-projet-nova.docx",
+    "pdf_size_bytes": 220875,
+    "docx_size_bytes": 905325,
+    "formats": [
+      "PDF",
+      "DOCX"
+    ],
+    "format": "PDF + DOCX",
+    "updated": "2026-06-23",
+    "search": "addendum correctif no 1 — police, armée et nominations mise à jour officielle à conserver dans une section historique ou “mises à jour”. mises à jour addendum mise à jour institutions"
+  },
+  "code-conduite-gouvernance-interne-nova": {
+    "slug": "code-conduite-gouvernance-interne-nova",
     "title": "Code de conduite et gouvernance interne Nova",
+    "type": "Code de conduite",
+    "section": "Transparence et gouvernance",
+    "priority": "9",
     "description": "Règles publiques de conduite, de gouvernance, d’intégrité, de transparence et de responsabilité interne.",
     "tags": [
       "éthique",
@@ -210,18 +218,41 @@
       "intégrité"
     ],
     "featured": false,
-    "docx": "documents/code-conduite-gouvernance-interne-nova.docx",
     "pdf": "documents/code-conduite-gouvernance-interne-nova.pdf",
-    "priority": "Moyenne",
-    "docx_size_bytes": 909368,
+    "docx": "documents/code-conduite-gouvernance-interne-nova.docx",
     "pdf_size_bytes": 192166,
-    "slug": "code-conduite-nova",
-    "updated": "2026-06-22",
+    "docx_size_bytes": 909368,
     "formats": [
       "PDF",
       "DOCX"
     ],
     "format": "PDF + DOCX",
-    "size_bytes": 909368
+    "updated": "2026-06-23",
+    "search": "code de conduite et gouvernance interne nova règles publiques de conduite, de gouvernance, d’intégrité, de transparence et de responsabilité interne. transparence et gouvernance éthique gouvernance intégrité"
+  },
+  "version-publique-simplifiee-citoyens": {
+    "slug": "version-publique-simplifiee-citoyens",
+    "title": "Version publique simplifiée — citoyens",
+    "type": "Version citoyenne",
+    "section": "Approfondir",
+    "priority": "10",
+    "description": "Version claire et accessible pour comprendre les grandes lignes du projet sans entrer dans les détails techniques.",
+    "tags": [
+      "citoyens",
+      "vulgarisation",
+      "version publique"
+    ],
+    "featured": false,
+    "pdf": "documents/version-publique-simplifiee-citoyens.pdf",
+    "docx": "documents/version-publique-simplifiee-citoyens.docx",
+    "pdf_size_bytes": 172282,
+    "docx_size_bytes": 906540,
+    "formats": [
+      "PDF",
+      "DOCX"
+    ],
+    "format": "PDF + DOCX",
+    "updated": "2026-06-23",
+    "search": "version publique simplifiée — citoyens version claire et accessible pour comprendre les grandes lignes du projet sans entrer dans les détails techniques. approfondir citoyens vulgarisation version publique"
   }
 }
