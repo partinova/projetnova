@@ -59,3 +59,31 @@ img{max-width:100%;display:block}
 
 /* Formulaire de soutien en ligne */
 .form-section-head{display:flex;align-items:center;gap:12px;margin:28px 0 16px;flex-wrap:wrap}.form-section-head h2{margin:0;color:var(--navy);font-size:1.35rem}.form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.form-grid-span{grid-column:1/-1}.check-grid{display:grid;gap:12px;margin:12px 0 22px}.check-grid label{display:flex;gap:12px;align-items:flex-start;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px;font-weight:700;color:var(--ink);line-height:1.45}.check-grid input[type="checkbox"]{width:18px;height:18px;margin-top:3px;flex:0 0 auto}.notice-box{background:#fff8e8;border:1px solid #f0d59a;color:#4f3b09;border-radius:18px;padding:16px 18px;margin:14px 0 20px;line-height:1.55}.nova-online-form .field textarea[readonly]{background:var(--soft);min-height:120px}.nova-online-form .field label input[type="checkbox"]{width:auto;margin-right:8px}.nova-online-form .form-status{min-height:24px}.side-card .notice-box{background:#f4fbfd;color:#234;border-color:#c8eef5}@media (max-width:700px){.form-grid-2{grid-template-columns:1fr}.form-grid-span{grid-column:auto}.check-grid label{font-size:.95rem}.form-section-head{display:block}.form-section-head .pill{margin-bottom:10px}}
+
+
+/* Correction lisibilité formulaire soutien : une option par ligne */
+.nova-online-form .check-grid,
+.nova-online-form .check-grid-single{
+  display:grid;
+  grid-template-columns:1fr !important;
+  gap:12px;
+}
+
+.nova-online-form .check-grid label,
+.nova-online-form .check-grid-single label{
+  display:grid;
+  grid-template-columns:22px 1fr;
+  align-items:start;
+  gap:12px;
+  width:100%;
+  line-height:1.45;
+  white-space:normal;
+}
+
+.nova-online-form .check-grid input[type="checkbox"],
+.nova-online-form .check-grid-single input[type="checkbox"]{
+  width:18px;
+  height:18px;
+  margin-top:3px;
+  flex:0 0 auto;
+}
