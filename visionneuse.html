@@ -1,4 +1,17 @@
-<!doctype html><html lang="fr-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Visionneuse PDF | Projet Nova</title><meta name="description" content="Visionneuse PDF intégrée du Projet Nova."><link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="assets/styles.css"><script src="assets/documents.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script></head><body data-page="visionneuse.html"><div class="viewer-shell"><header class="viewer-top"><div class="container viewer-controls"><a class="btn btn-outline" href="documents.html">← Documents</a><span class="viewer-title" id="viewerTitle">Visionneuse PDF</span><select class="select-input" id="docSelect" style="max-width:360px"></select><button class="btn btn-outline" id="prevPage" type="button">Page précédente</button><span id="pageInfo">Page —</span><button class="btn btn-outline" id="nextPage" type="button">Page suivante</button><button class="btn btn-outline" id="zoomOut" type="button">−</button><button class="btn btn-outline" id="zoomIn" type="button">+</button><a class="btn btn-warning" id="downloadBtn" href="#" download>Télécharger le PDF</a></div><div class="container viewer-status" id="viewerStatus">Chargement...</div></header><main class="viewer-canvas-wrap"><div class="viewer-page-card"><canvas id="pdfCanvas"></canvas></div></main></div><script>
+<!doctype html>
+<html lang="fr-CA"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visionneuse PDF | Projet Nova</title>
+<meta name="description" content="Visionneuse PDF intégrée du Projet Nova.">
+<link rel="canonical" href="https://www.partinova.ca/visionneuse.html">
+<meta property="og:title" content="Visionneuse PDF | Projet Nova"><meta property="og:description" content="Visionneuse PDF intégrée du Projet Nova."><meta property="og:type" content="website"><meta property="og:image" content="https://www.partinova.ca/assets/banniere-nova.jpg">
+<link rel="icon" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="manifest" href="site.webmanifest">
+<link rel="preload" as="image" href="assets/banniere-nova.jpg"><link rel="stylesheet" href="assets/styles.css">
+<script src="assets/documents.js" defer></script><script src="assets/script.js" defer></script>
+</head><body data-page="visionneuse.html"><a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="topbar"><div class="container topbar-inner"><span>Projet Nova — site officiel</span><span><a href="https://www.facebook.com/Projet.Nova" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@officielpartinova" target="_blank" rel="noopener">TikTok</a><a href="https://www.youtube.com/channel/UCWsUxKktAhJZaDr3Aya426w" target="_blank" rel="noopener">YouTube</a></span></div></div>
+<header class="site-header" data-site-header><div class="container header-inner"><a class="brand" href="index.html"><img src="assets/logo-nova.png" alt="Logo Projet Nova"><span><strong>Projet Nova</strong><small>Le renouveau commence maintenant</small></span></a><button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button><nav class="main-nav" aria-label="Navigation principale" data-main-nav><a class="nav-link" href="index.html">Accueil</a><a class="nav-link" href="comprendre-nova.html">Comprendre Nova</a><a class="nav-link" href="manifeste.html">Manifeste</a><a class="nav-link" href="livre-nova.html">Livre Nova</a><a class="nav-link" href="programme.html">Programme</a><a class="nav-link" href="transparence.html">Gouvernance</a><a class="nav-link" href="presse.html">Presse</a><a class="nav-link" href="recrutement.html">Recrutement</a><a class="nav-link" href="documents.html">Documents</a><a class="nav-link" href="faq.html">FAQ</a><a class="nav-link" href="contact.html">Contact</a></nav></div></header>
+<main id="contenu"><section class="viewer-shell"><header class="viewer-top"><div class="container viewer-controls"><a class="btn btn-outline" href="documents.html">← Documents</a><span class="viewer-title" id="viewerTitle">Visionneuse PDF</span><select class="select-input" id="docSelect" style="max-width:360px"></select><button class="btn btn-outline" id="prevPage" type="button">Page précédente</button><span id="pageInfo">Page —</span><button class="btn btn-outline" id="nextPage" type="button">Page suivante</button><button class="btn btn-outline" id="zoomOut" type="button">−</button><button class="btn btn-outline" id="zoomIn" type="button">+</button><a class="btn btn-warning" id="downloadBtn" href="#" download>Télécharger le PDF</a></div><div class="container viewer-status" id="viewerStatus">Chargement...</div></header><main class="viewer-canvas-wrap"><div id="pdfPages" class="viewer-pages"></div></main></section></main><script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script><script>
 (function(){
   const docs=window.NOVA_DOCUMENTS||[];
   const params=new URLSearchParams(location.search);
@@ -7,49 +20,46 @@
   const title=document.getElementById('viewerTitle');
   const status=document.getElementById('viewerStatus');
   const download=document.getElementById('downloadBtn');
-  const canvas=document.getElementById('pdfCanvas');
-  const ctx=canvas.getContext('2d');
+  const pagesWrap=document.getElementById('pdfPages');
   const pageInfo=document.getElementById('pageInfo');
   const prev=document.getElementById('prevPage');
   const next=document.getElementById('nextPage');
   const zoomIn=document.getElementById('zoomIn');
   const zoomOut=document.getElementById('zoomOut');
-  let pdf=null,pageNum=1,scale=1.25,rendering=false,pending=null;
+  let pdf=null,pageNum=1,scale=1.2;
   if(window.pdfjsLib){pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';}
-  select.innerHTML=docs.map(d=>`<option value="${d.id}">${d.title}</option>`).join('');
-  function setDoc(d){
-    currentDoc=d; select.value=d.id; title.textContent=d.title; download.href=d.path; download.setAttribute('download', d.file); pageNum=1; pdf=null; renderDoc();
-    const url=new URL(location.href); url.searchParams.set('doc',d.id); history.replaceState(null,'',url.toString());
+  select.innerHTML=docs.map(d=>`<option value="${d.id}">${d.order} — ${d.title}</option>`).join('');
+  function controls(){ if(!pdf){pageInfo.textContent='Page —'; return;} pageInfo.textContent=`Page ${pageNum} / ${pdf.numPages}`; prev.disabled=pageNum<=1; next.disabled=pageNum>=pdf.numPages; }
+  async function renderPage(){
+    if(!pdf) return;
+    pagesWrap.innerHTML='';
+    const page=await pdf.getPage(pageNum);
+    const viewport=page.getViewport({scale});
+    const holder=document.createElement('div'); holder.className='viewer-page-card';
+    const canvas=document.createElement('canvas'); canvas.width=viewport.width; canvas.height=viewport.height;
+    holder.appendChild(canvas); pagesWrap.appendChild(holder);
+    await page.render({canvasContext:canvas.getContext('2d'), viewport}).promise;
+    controls();
   }
-  async function renderDoc(){
-    if(!window.pdfjsLib){status.innerHTML='La librairie PDF intégrée n’a pas chargé. Le document n’est pas téléchargé automatiquement. Vous pouvez utiliser le bouton Télécharger seulement si vous le voulez.'; return;}
+  async function setDoc(d){
+    currentDoc=d; select.value=d.id; title.textContent=d.title; download.href=d.path; download.setAttribute('download',d.file); pageNum=1; pagesWrap.innerHTML='';
+    const url=new URL(location.href); url.searchParams.set('doc',d.id); history.replaceState(null,'',url.toString());
+    if(!window.pdfjsLib){status.innerHTML='La visionneuse PDF intégrée n’a pas chargé. Aucun téléchargement automatique n’a été lancé. Utilisez Télécharger seulement si vous voulez enregistrer le fichier.'; return;}
     try{
-      status.textContent='Chargement du document dans la visionneuse du site...';
-      pdf=await pdfjsLib.getDocument({url:currentDoc.path, withCredentials:false}).promise;
-      status.textContent='Document chargé. Utilisez les boutons pour changer de page ou télécharger volontairement.';
-      queueRender(pageNum);
+      status.textContent='Chargement du PDF dans la visionneuse du site...';
+      pdf=await pdfjsLib.getDocument({url:d.path, disableAutoFetch:false, disableStream:false}).promise;
+      status.textContent='Document affiché dans le site. Le téléchargement se fait seulement avec le bouton Télécharger le PDF.';
+      await renderPage();
     }catch(e){
       console.error(e);
-      status.innerHTML='Impossible d’afficher ce PDF dans la visionneuse intégrée. Aucun téléchargement automatique n’a été lancé. Utilisez le bouton Télécharger le PDF seulement si vous voulez l’enregistrer.';
+      status.innerHTML='Impossible d’afficher ce PDF dans la visionneuse intégrée. Aucun téléchargement automatique n’a été lancé. Utilisez le bouton Télécharger seulement si vous voulez l’enregistrer.';
     }
   }
-  async function renderPage(num){
-    rendering=true;
-    const page=await pdf.getPage(num);
-    const viewport=page.getViewport({scale});
-    canvas.height=viewport.height; canvas.width=viewport.width;
-    await page.render({canvasContext:ctx, viewport}).promise;
-    pageInfo.textContent=`Page ${pageNum} / ${pdf.numPages}`;
-    prev.disabled=pageNum<=1; next.disabled=pageNum>=pdf.numPages;
-    rendering=false;
-    if(pending!==null){const p=pending; pending=null; renderPage(p);}
-  }
-  function queueRender(num){ if(rendering) pending=num; else renderPage(num); }
-  prev.onclick=()=>{if(pdf&&pageNum>1){pageNum--; queueRender(pageNum)}};
-  next.onclick=()=>{if(pdf&&pageNum<pdf.numPages){pageNum++; queueRender(pageNum)}};
-  zoomIn.onclick=()=>{if(pdf){scale=Math.min(scale+.15,2.4); queueRender(pageNum)}};
-  zoomOut.onclick=()=>{if(pdf){scale=Math.max(scale-.15,.7); queueRender(pageNum)}};
+  prev.onclick=()=>{if(pdf&&pageNum>1){pageNum--;renderPage();}};
+  next.onclick=()=>{if(pdf&&pageNum<pdf.numPages){pageNum++;renderPage();}};
+  zoomIn.onclick=()=>{if(pdf){scale=Math.min(scale+.15,2.6);renderPage();}};
+  zoomOut.onclick=()=>{if(pdf){scale=Math.max(scale-.15,.65);renderPage();}};
   select.onchange=()=>setDoc(docs.find(d=>d.id===select.value)||docs[0]);
-  setDoc(currentDoc);
+  if(currentDoc) setDoc(currentDoc); else status.textContent='Aucun document public disponible.';
 })();
-</script></body></html>
+</script><footer class="footer"><div class="container footer-main"><section><img src="assets/logo-nova.png" alt="" width="64" height="64"><h2>Projet Nova</h2><p>Projet politique québécois de refondation nationale fondé sur la souveraineté populaire, la transparence et la responsabilité publique.</p><p><a href="mailto:officiellenovaparti@gmail.com">officiellenovaparti@gmail.com</a></p></section><section><h3>Navigation</h3><ul><li><a href="index.html">Accueil</a></li><li><a href="comprendre-nova.html">Comprendre Nova</a></li><li><a href="manifeste.html">Manifeste</a></li><li><a href="livre-nova.html">Livre Nova</a></li><li><a href="programme.html">Programme</a></li><li><a href="transparence.html">Gouvernance</a></li><li><a href="presse.html">Presse</a></li><li><a href="recrutement.html">Recrutement</a></li><li><a href="documents.html">Documents</a></li></ul></section><section><h3>Documents publics</h3><ul><li><a href="visionneuse.html?doc=resume">Résumé 1 page</a></li><li><a href="visionneuse.html?doc=livre-court">Livre Nova court</a></li><li><a href="visionneuse.html?doc=programme">Programme complet</a></li><li><a href="visionneuse.html?doc=formulaire-soutien">Formulaire de soutien</a></li></ul></section><section><h3>Cadre</h3><ul><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Nous joindre</a></li><li><a href="confidentialite.html">Confidentialité</a></li><li><a href="avis-legal.html">Avis légal</a></li><li><a href="accessibilite.html">Accessibilité</a></li></ul></section></div><div class="container footer-bottom"><span>© Projet Nova. Tous droits réservés.</span><span>Site statique GitHub Pages.</span></div></footer></body></html>
