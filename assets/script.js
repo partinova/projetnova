@@ -1,17 +1,23 @@
+
 (function(){
-  const docs = window.NOVA_DOCUMENTS || [];
-  const byId = Object.fromEntries(docs.map(d=>[d.id,d]));
-  const $ = (s, root=document)=>root.querySelector(s);
-  const $$ = (s, root=document)=>Array.from(root.querySelectorAll(s));
-  function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
-  function pdfPath(d){return 'documents/' + encodeURIComponent(d.file).replace(/%2F/g,'/');}
-  function viewerUrl(d){return 'visionneuse.html?doc=' + encodeURIComponent(d.id);}
-  function menu(){const toggle=$('[data-menu-toggle]'), nav=$('[data-main-nav]'); if(!toggle||!nav)return; toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open'); toggle.setAttribute('aria-expanded',open?'true':'false');}); $$('a',nav).forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false');}));}
-  function activeNav(){const page=document.body.dataset.page || location.pathname.split('/').pop() || 'index.html'; $$('[data-main-nav] a').forEach(a=>{const href=a.getAttribute('href'); if(href===page || (page==='formulaire-soutien.html'&&href==='recrutement.html') || (page==='participer.html'&&href==='recrutement.html') || (page===''&&href==='index.html')) a.classList.add('active');});}
-  function card(d){const path=pdfPath(d), view=viewerUrl(d); return `<article class="card library-card" data-section="${esc(d.section)}" data-search="${esc((d.title+' '+d.desc+' '+d.section+' '+d.type).toLowerCase())}"><div class="doc-meta"><span class="tag">${esc(d.section)}</span><span class="tag">${esc(d.type)}</span></div><h3>${esc(d.title)}</h3><p>${esc(d.desc)}</p><div class="doc-actions"><a class="btn btn-dark" href="${view}">Visionner sur le site</a><a class="btn btn-outline" href="${path}" download>Télécharger le PDF</a></div></article>`;}
-  function library(){const wrap=$('[data-document-library]'); if(!wrap)return; const sections=['Tous',...Array.from(new Set(docs.map(d=>d.section)))]; const toolbar=$('[data-library-toolbar]'); if(toolbar){toolbar.innerHTML=`<input id="docSearch" class="search" type="search" placeholder="Rechercher un document PDF..." aria-label="Rechercher un document"><div class="chips">${sections.map((s,i)=>`<button class="chip ${i===0?'active':''}" type="button" data-filter="${esc(s)}">${esc(s)}</button>`).join('')}</div><strong data-doc-count></strong>`;} wrap.innerHTML=docs.map(card).join(''); const cards=$$('.library-card',wrap), input=$('#docSearch'), chips=$$('[data-filter]'), count=$('[data-doc-count]'); let filter='Tous'; function apply(){const q=(input?.value||'').toLowerCase().trim(); let n=0; cards.forEach(c=>{const show=(filter==='Tous'||c.dataset.section===filter)&&(!q||(c.dataset.search||'').includes(q)); c.hidden=!show; if(show)n++;}); if(count) count.textContent=n+' PDF';} input&&input.addEventListener('input',apply); chips.forEach(ch=>ch.addEventListener('click',()=>{chips.forEach(c=>c.classList.remove('active'));ch.classList.add('active');filter=ch.dataset.filter;apply();})); apply();}
-  function docButtons(){$$('[data-doc-button]').forEach(el=>{const d=byId[el.dataset.docButton]; if(!d)return; el.href=viewerUrl(d); el.removeAttribute('download'); el.removeAttribute('target'); if(!/visionner|lire|consulter/i.test(el.textContent||'')) el.textContent='Visionner sur le site';}); $$('[data-doc-download]').forEach(el=>{const d=byId[el.dataset.docDownload]; if(!d)return; el.href=pdfPath(d); el.setAttribute('download',''); if(!el.textContent.trim()) el.textContent='Télécharger le PDF';});}
-  function viewer(){const panel=$('[data-pdf-viewer]'); if(!panel)return; const params=new URLSearchParams(location.search); let id=params.get('doc') || 'manifeste-officiel'; let d=byId[id] || docs[0]; if(!d)return; const path=pdfPath(d); const sel=$('#docSelect'); if(sel){sel.innerHTML=docs.map(x=>`<option value="${esc(x.id)}" ${x.id===d.id?'selected':''}>${esc(x.title)}</option>`).join(''); sel.addEventListener('change',()=>{const next=byId[sel.value]; if(next) location.href=viewerUrl(next);});} const title=$('[data-viewer-title]'), type=$('[data-viewer-type]'), frame=$('[data-viewer-frame]'), down=$('[data-viewer-download]'), open=$('[data-viewer-open]'); if(title) title.textContent=d.title; if(type) type.textContent=d.section+' · '+d.type; if(frame){frame.src=path+'#toolbar=1&navpanes=0&view=FitH'; frame.title=d.title;} if(down){down.href=path; down.setAttribute('download',''); down.textContent='Télécharger le PDF';} if(open){open.href=path; open.target='_blank'; open.rel='noopener'; open.removeAttribute('download'); open.textContent='Ouvrir le PDF dans un nouvel onglet';}}
-  function supportForm(){const form=$('#formulaireSoutien'); if(!form)return; const dateField=$('#dateSignature'); if(dateField && !dateField.value){dateField.value=new Date().toISOString().slice(0,10);} form.addEventListener('submit',()=>{const email=$('#email')?.value.trim()||'', name=$('#nomLegal')?.value.trim()||''; const copy=$('#formCopyEmail'), reply=$('#formReplyTo'), summary=$('#formSummary'), status=$('#formStatus'); if(copy) copy.value=email; if(reply) reply.value=email; if(summary){const data=new FormData(form); const lines=['FORMULAIRE DE SOUTIEN ET DE PRÉADHÉSION — PROJET NOVA','Formulaire : Soutien et préadhésion Projet Nova','Organisation : Équipe Projet Nova','Courriel officiel : officiellenovaparti@gmail.com','Nom : '+name,'Courriel : '+email,'Date d’envoi : '+new Date().toLocaleString('fr-CA'),'']; for(const [key,value] of data.entries()){if(key.startsWith('_')||key==='Résumé complet du formulaire') continue; if(String(value).trim()) lines.push(key+' : '+value);} summary.value=lines.join('\n');} if(status) status.textContent='Envoi en cours... une copie pourra être envoyée au courriel indiqué.';});}
-  document.addEventListener('DOMContentLoaded',()=>{menu();activeNav();library();docButtons();viewer();supportForm();});
+  const toggle=document.querySelector('[data-menu-toggle]');
+  const nav=document.querySelector('[data-main-nav]');
+  if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});}
+  const page=document.body.getAttribute('data-page')||'';
+  document.querySelectorAll('.nav-link').forEach(a=>{if(a.getAttribute('href')===page)a.classList.add('active');});
+  const search=document.querySelector('[data-doc-search]');
+  const filter=document.querySelector('[data-doc-filter]');
+  const list=document.querySelector('[data-doc-list]');
+  if(list && window.NOVA_DOCUMENTS){
+    const docs=window.NOVA_DOCUMENTS;
+    const sections=[...new Set(docs.map(d=>d.section))].sort();
+    if(filter){ filter.innerHTML='<option value="">Toutes les sections</option>'+sections.map(s=>`<option>${s}</option>`).join(''); }
+    function render(){
+      const q=(search&&search.value||'').toLowerCase();
+      const sec=(filter&&filter.value||'');
+      const filtered=docs.filter(d=>(!sec||d.section===sec)&&(`${d.title} ${d.desc} ${d.section}`.toLowerCase().includes(q)));
+      list.innerHTML=filtered.map(d=>`<article class="doc-card"><span class="pill">${d.section}</span><h3>${d.title}</h3><p>${d.desc}</p><div class="card-actions"><a class="btn btn-primary" href="visionneuse.html?doc=${encodeURIComponent(d.id)}">Visionner sur le site</a><a class="btn btn-outline" href="${d.path}" download>Télécharger le PDF</a></div></article>`).join('') || '<p class="muted">Aucun document trouvé.</p>';
+    }
+    search&&search.addEventListener('input',render); filter&&filter.addEventListener('change',render); render();
+  }
 })();
