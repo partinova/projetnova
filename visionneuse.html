@@ -1,32 +1,55 @@
-<!doctype html>
-<html lang="fr-CA">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Visionneuse PDF | Projet Nova</title>
-  <meta name="description" content="Visionneuse PDF intégrée du Projet Nova.">
-  <link rel="canonical" href="https://www.partinova.ca/visionneuse.html">
-  <meta property="og:title" content="Visionneuse PDF | Projet Nova">
-  <meta property="og:description" content="Visionneuse PDF intégrée du Projet Nova.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.partinova.ca/assets/banniere-nova.jpg">
-  <link rel="icon" href="favicon.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" as="image" href="assets/banniere-nova.jpg">
-  <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/documents.js" defer></script>
-  <script src="assets/script.js" defer></script>
-  
-</head>
-<body data-page="visionneuse.html">
-<a class="skip-link" href="#contenu">Aller au contenu</a>
-<div class="topbar"><div class="container topbar-inner"><span>Projet Nova — site public officiel</span><span class="topbar-social"><a href="https://www.facebook.com/Projet.Nova" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@officielpartinova" target="_blank" rel="noopener">TikTok</a><a href="https://www.youtube.com/channel/UCWsUxKktAhJZaDr3Aya426w" target="_blank" rel="noopener">YouTube</a></span></div></div>
-<header class="site-header" data-site-header>
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Accueil Projet Nova"><img src="assets/logo-nova.png" width="54" height="54" alt="Logo Projet Nova"><span><strong>Projet Nova</strong><small>Le renouveau commence maintenant</small></span></a>
-    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mainNav">Menu</button>
-    <nav class="main-nav" id="mainNav" data-main-nav aria-label="Navigation principale"><a class="nav-link" href="index.html">Accueil</a><a class="nav-link" href="manifeste.html">Manifeste</a><a class="nav-link" href="mission.html">Mission</a><a class="nav-link" href="programme.html">Programme</a><a class="nav-link" href="livre-nova.html">Livre Nova</a><a class="nav-link" href="transition.html">Transition</a><a class="nav-link" href="documents.html">Documents</a><a class="nav-link" href="faq.html">FAQ</a><a class="nav-link" href="recrutement.html">Recrutement</a><a class="nav-link" href="contact.html">Contact</a></nav>
-  </div>
-</header>
-<main id="contenu" class="pdf-page"><section class="page-header"><div class="container"><span class="eyebrow">Visionneuse PDF</span><h1>Visionner un document</h1><p>La lecture se fait directement dans le site. Le téléchargement ne démarre pas automatiquement : il faut cliquer sur le bouton de téléchargement.</p></div></section><section class="section"><div class="container"><div class="viewer-help"><strong>Lecture intégrée :</strong> choisissez un document, lisez-le dans la page, puis téléchargez-le seulement si vous le souhaitez.</div><div class="pdf-panel" data-pdf-viewer style="margin-top:18px"><div class="pdf-toolbar"><div><strong data-viewer-title>Document PDF</strong><div class="small" data-viewer-type>Projet Nova</div></div><div class="actions"><select class="select" id="docSelect" aria-label="Choisir un document PDF"></select><a class="btn btn-outline" data-viewer-open>Ouvrir le PDF dans un nouvel onglet</a><a class="btn btn-dark" data-viewer-download>Télécharger le PDF</a></div></div><iframe class="pdf-frame" data-viewer-frame title="Visionneuse PDF Projet Nova"></iframe></div></div></section></main><footer class="footer"><div class="container footer-grid"><div><strong>Projet Nova</strong><p class="small">Documents publics consultables sur le site. Téléchargement disponible seulement par les boutons « Télécharger le PDF ».</p></div><div><a href="avis-legal.html">Avis légal</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="accessibilite.html">Accessibilité</a></div></div></footer></body></html>
+<!doctype html><html lang="fr-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Visionneuse PDF | Projet Nova</title><meta name="description" content="Visionneuse PDF intégrée du Projet Nova."><link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="assets/styles.css"><script src="assets/documents.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script></head><body data-page="visionneuse.html"><div class="viewer-shell"><header class="viewer-top"><div class="container viewer-controls"><a class="btn btn-outline" href="documents.html">← Documents</a><span class="viewer-title" id="viewerTitle">Visionneuse PDF</span><select class="select-input" id="docSelect" style="max-width:360px"></select><button class="btn btn-outline" id="prevPage" type="button">Page précédente</button><span id="pageInfo">Page —</span><button class="btn btn-outline" id="nextPage" type="button">Page suivante</button><button class="btn btn-outline" id="zoomOut" type="button">−</button><button class="btn btn-outline" id="zoomIn" type="button">+</button><a class="btn btn-warning" id="downloadBtn" href="#" download>Télécharger le PDF</a></div><div class="container viewer-status" id="viewerStatus">Chargement...</div></header><main class="viewer-canvas-wrap"><div class="viewer-page-card"><canvas id="pdfCanvas"></canvas></div></main></div><script>
+(function(){
+  const docs=window.NOVA_DOCUMENTS||[];
+  const params=new URLSearchParams(location.search);
+  let currentDoc=docs.find(d=>d.id===params.get('doc'))||docs[0];
+  const select=document.getElementById('docSelect');
+  const title=document.getElementById('viewerTitle');
+  const status=document.getElementById('viewerStatus');
+  const download=document.getElementById('downloadBtn');
+  const canvas=document.getElementById('pdfCanvas');
+  const ctx=canvas.getContext('2d');
+  const pageInfo=document.getElementById('pageInfo');
+  const prev=document.getElementById('prevPage');
+  const next=document.getElementById('nextPage');
+  const zoomIn=document.getElementById('zoomIn');
+  const zoomOut=document.getElementById('zoomOut');
+  let pdf=null,pageNum=1,scale=1.25,rendering=false,pending=null;
+  if(window.pdfjsLib){pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';}
+  select.innerHTML=docs.map(d=>`<option value="${d.id}">${d.title}</option>`).join('');
+  function setDoc(d){
+    currentDoc=d; select.value=d.id; title.textContent=d.title; download.href=d.path; download.setAttribute('download', d.file); pageNum=1; pdf=null; renderDoc();
+    const url=new URL(location.href); url.searchParams.set('doc',d.id); history.replaceState(null,'',url.toString());
+  }
+  async function renderDoc(){
+    if(!window.pdfjsLib){status.innerHTML='La librairie PDF intégrée n’a pas chargé. Le document n’est pas téléchargé automatiquement. Vous pouvez utiliser le bouton Télécharger seulement si vous le voulez.'; return;}
+    try{
+      status.textContent='Chargement du document dans la visionneuse du site...';
+      pdf=await pdfjsLib.getDocument({url:currentDoc.path, withCredentials:false}).promise;
+      status.textContent='Document chargé. Utilisez les boutons pour changer de page ou télécharger volontairement.';
+      queueRender(pageNum);
+    }catch(e){
+      console.error(e);
+      status.innerHTML='Impossible d’afficher ce PDF dans la visionneuse intégrée. Aucun téléchargement automatique n’a été lancé. Utilisez le bouton Télécharger le PDF seulement si vous voulez l’enregistrer.';
+    }
+  }
+  async function renderPage(num){
+    rendering=true;
+    const page=await pdf.getPage(num);
+    const viewport=page.getViewport({scale});
+    canvas.height=viewport.height; canvas.width=viewport.width;
+    await page.render({canvasContext:ctx, viewport}).promise;
+    pageInfo.textContent=`Page ${pageNum} / ${pdf.numPages}`;
+    prev.disabled=pageNum<=1; next.disabled=pageNum>=pdf.numPages;
+    rendering=false;
+    if(pending!==null){const p=pending; pending=null; renderPage(p);}
+  }
+  function queueRender(num){ if(rendering) pending=num; else renderPage(num); }
+  prev.onclick=()=>{if(pdf&&pageNum>1){pageNum--; queueRender(pageNum)}};
+  next.onclick=()=>{if(pdf&&pageNum<pdf.numPages){pageNum++; queueRender(pageNum)}};
+  zoomIn.onclick=()=>{if(pdf){scale=Math.min(scale+.15,2.4); queueRender(pageNum)}};
+  zoomOut.onclick=()=>{if(pdf){scale=Math.max(scale-.15,.7); queueRender(pageNum)}};
+  select.onchange=()=>setDoc(docs.find(d=>d.id===select.value)||docs[0]);
+  setDoc(currentDoc);
+})();
+</script></body></html>
