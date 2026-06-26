@@ -1,146 +1,98 @@
 window.NOVA_DOCUMENTS = [
   {
-    "id": "index-documents",
     "order": "00",
-    "file": "00_Index_Documents_Publics_Site_Web_Projet_Nova.pdf",
-    "title": "Index des documents publics",
     "section": "Repères publics",
+    "title": "Index des documents publics",
     "desc": "Index officiel des documents publiés sur le site.",
-    "featured": false,
     "path": "documents/00_Index_Documents_Publics_Site_Web_Projet_Nova.pdf",
-    "size": 47902,
-    "sha1": "de5ab84bbdf5d49ea1d2552decc9a0298bf9f7dc"
+    "file": "00_Index_Documents_Publics_Site_Web_Projet_Nova.pdf"
   },
   {
-    "id": "resume",
     "order": "01",
-    "file": "01_Resume_Officiel_1_Page_Projet_Nova.pdf",
+    "section": "Accueil",
     "title": "Résumé officiel — 1 page",
-    "section": "Accueil",
-    "desc": "Résumé court pour comprendre le Projet Nova rapidement.",
-    "featured": true,
+    "desc": "Résumé court pour comprendre rapidement l’objectif, les priorités et la démarche du Projet Nova.",
     "path": "documents/01_Resume_Officiel_1_Page_Projet_Nova.pdf",
-    "size": 47399,
-    "sha1": "3333493ff559a35f5abd2023b212c7dac4ab20ef"
+    "file": "01_Resume_Officiel_1_Page_Projet_Nova.pdf"
   },
   {
-    "id": "depliant",
     "order": "02",
-    "file": "02_Depliant_Public_4_Pages_Projet_Nova.pdf",
-    "title": "Dépliant public — 4 pages",
     "section": "Accueil",
-    "desc": "Présentation publique concise du Projet Nova.",
-    "featured": true,
+    "title": "Dépliant public — 4 pages",
+    "desc": "Présentation concise à partager avec les citoyens pour expliquer le projet en quelques minutes.",
     "path": "documents/02_Depliant_Public_4_Pages_Projet_Nova.pdf",
-    "size": 95857,
-    "sha1": "9978f0a6dcf650fc597065eb7982ab89dd7024e0"
+    "file": "02_Depliant_Public_4_Pages_Projet_Nova.pdf"
   },
   {
-    "id": "livre-court",
     "order": "03",
-    "file": "03_Livre_Nova_Version_Courte.pdf",
+    "section": "Livre Nova",
     "title": "Livre Nova — version courte",
-    "section": "Livre Nova",
-    "desc": "Version courte et accessible du Livre Nova.",
-    "featured": true,
+    "desc": "Version accessible du Livre Nova pour comprendre la vision générale sans lire le document complet.",
     "path": "documents/03_Livre_Nova_Version_Courte.pdf",
-    "size": 68791,
-    "sha1": "8791d1c0c9fa983120469a3f98c1634ef22fbb88"
+    "file": "03_Livre_Nova_Version_Courte.pdf"
   },
   {
-    "id": "livre-complet",
     "order": "04",
-    "file": "04_Livre_Nova_Complet.pdf",
-    "title": "Livre Nova complet",
     "section": "Livre Nova",
-    "desc": "Document complet de référence du Projet Nova.",
-    "featured": true,
+    "title": "Livre Nova complet",
+    "desc": "Document de référence complet du Projet Nova, regroupant la vision, les principes et les orientations publiques.",
     "path": "documents/04_Livre_Nova_Complet.pdf",
-    "size": 719393,
-    "sha1": "fcc63e9b6258174b20c1b726c3ac5167a22b21e4"
+    "file": "04_Livre_Nova_Complet.pdf"
   },
   {
-    "id": "manifeste",
     "order": "05",
-    "file": "05_Manifeste_Officiel_Projet_Nova.pdf",
+    "section": "Programme",
     "title": "Manifeste officiel",
-    "section": "Programme",
-    "desc": "Mission, appel public et engagements fondamentaux.",
-    "featured": true,
+    "desc": "Texte fondateur présentant l’appel public, la mission, les engagements et l’esprit politique du Projet Nova.",
     "path": "documents/05_Manifeste_Officiel_Projet_Nova.pdf",
-    "size": 282488,
-    "sha1": "8691a789ef63b063a9c003dafcca6078942943ef"
+    "file": "05_Manifeste_Officiel_Projet_Nova.pdf"
   },
   {
-    "id": "faq",
     "order": "06",
-    "file": "06_FAQ_Citoyenne_Officielle_Projet_Nova.pdf",
+    "section": "Programme",
     "title": "FAQ citoyenne officielle",
-    "section": "Programme",
-    "desc": "Questions et réponses destinées au public.",
-    "featured": true,
+    "desc": "Réponses claires aux questions fréquentes sur le Projet Nova, ses documents, sa démarche et ses priorités.",
     "path": "documents/06_FAQ_Citoyenne_Officielle_Projet_Nova.pdf",
-    "size": 649173,
-    "sha1": "ff577a75c3b367ea6db161df4f491ed67e16eb2d"
+    "file": "06_FAQ_Citoyenne_Officielle_Projet_Nova.pdf"
   },
   {
-    "id": "programme",
     "order": "07",
-    "file": "07_Programme_Electoral_Complet_Projet_Nova.pdf",
-    "title": "Programme électoral complet",
     "section": "Programme",
-    "desc": "Engagements politiques structurés et vérifiables.",
-    "featured": true,
+    "title": "Programme électoral complet",
+    "desc": "Engagements publics structurés, vérifiables et présentés comme base de travail politique.",
     "path": "documents/07_Programme_Electoral_Complet_Projet_Nova.pdf",
-    "size": 1525838,
-    "sha1": "a8889fa6b72e9ea2c9e92e8e06a28750055cf8a8"
+    "file": "07_Programme_Electoral_Complet_Projet_Nova.pdf"
   },
   {
-    "id": "code-conduite",
     "order": "08",
-    "file": "08_Code_de_Conduite_Gouvernance_Nova.pdf",
-    "title": "Code de conduite et gouvernance",
     "section": "Transparence / Gouvernance",
-    "desc": "Règles d’intégrité, de comportement et de gouvernance interne.",
-    "featured": false,
+    "title": "Code de conduite et gouvernance",
+    "desc": "Règles d’intégrité, de comportement, de responsabilité interne et de gouvernance publique du Projet Nova.",
     "path": "documents/08_Code_de_Conduite_Gouvernance_Nova.pdf",
-    "size": 185509,
-    "sha1": "b768816ea3bdfcfb65062e193277d5bdd5b0d9c7"
+    "file": "08_Code_de_Conduite_Gouvernance_Nova.pdf"
   },
   {
-    "id": "dossier-presse",
     "order": "09",
-    "file": "09_Dossier_de_Presse_Projet_Nova.pdf",
+    "section": "Médias / Presse",
     "title": "Dossier de presse officiel",
-    "section": "Médias / Presse",
-    "desc": "Document de référence pour les médias.",
-    "featured": false,
+    "desc": "Document de référence pour les journalistes, médias, partenaires et citoyens qui veulent citer Projet Nova correctement.",
     "path": "documents/09_Dossier_de_Presse_Projet_Nova.pdf",
-    "size": 253862,
-    "sha1": "dd17b4cacfdad1db2d013e9b4c8349b29875d40b"
+    "file": "09_Dossier_de_Presse_Projet_Nova.pdf"
   },
   {
-    "id": "formulaire-soutien",
     "order": "10",
-    "file": "10_Formulaire_Soutien_Preadhesion_Projet_Nova.pdf",
-    "title": "Formulaire de soutien / préadhésion",
     "section": "Participer / Soutenir Nova",
-    "desc": "Version PDF du formulaire de soutien et de préadhésion.",
-    "featured": false,
+    "title": "Formulaire de soutien / préadhésion",
+    "desc": "Version PDF officielle du formulaire de soutien et de préadhésion au Projet Nova.",
     "path": "documents/10_Formulaire_Soutien_Preadhesion_Projet_Nova.pdf",
-    "size": 47176,
-    "sha1": "b1472cdf0daeff4fc33de7c4d88c4301744ef64f"
+    "file": "10_Formulaire_Soutien_Preadhesion_Projet_Nova.pdf"
   },
   {
-    "id": "charte-visuelle",
     "order": "11",
-    "file": "11_Charte_Visuelle_Projet_Nova.pdf",
-    "title": "Charte visuelle officielle",
     "section": "Médias / Presse",
-    "desc": "Repères d’identité visuelle et d’usage public.",
-    "featured": false,
+    "title": "Charte visuelle officielle",
+    "desc": "Repères d’identité visuelle, d’utilisation du nom, du logo, des couleurs et des éléments publics du Projet Nova.",
     "path": "documents/11_Charte_Visuelle_Projet_Nova.pdf",
-    "size": 46373,
-    "sha1": "c598ccf64c42e16f908059bcd6d42eb66b8deb4a"
+    "file": "11_Charte_Visuelle_Projet_Nova.pdf"
   }
 ];
