@@ -1,0 +1,272 @@
+window.NOVA_DOCUMENTS = [
+  {
+    "id": "version-publique",
+    "title": "Version publique simplifiée - Citoyens",
+    "file": "Version_Publique_Citoyens.pdf",
+    "section": "Public",
+    "type": "Synthèse citoyenne",
+    "desc": "Lecture courte pour comprendre les règles, les phases et les garanties du Projet Nova.",
+    "featured": true
+  },
+  {
+    "id": "manifeste-officiel",
+    "title": "Manifeste officiel",
+    "file": "Manifeste_Officiel.pdf",
+    "section": "Public",
+    "type": "Manifeste",
+    "desc": "Appel public, mission nationale et dix grands engagements du Projet Nova.",
+    "featured": true
+  },
+  {
+    "id": "livre-nova-complet",
+    "title": "Livre Nova complet",
+    "file": "Livre_Nova_Complet.pdf",
+    "section": "Public",
+    "type": "Livre",
+    "desc": "Document de référence citoyen sur la vision, la méthode et la doctrine publique.",
+    "featured": true
+  },
+  {
+    "id": "livre-nova-court",
+    "title": "Livre Nova - version courte",
+    "file": "Livre_Nova_Court.pdf",
+    "section": "Public",
+    "type": "Livre",
+    "desc": "Version plus courte du Livre Nova pour lecture rapide et diffusion.",
+    "featured": false
+  },
+  {
+    "id": "programme-electoral",
+    "title": "Programme électoral complet",
+    "file": "Programme_Electoral_Complet.pdf",
+    "section": "Programme",
+    "type": "Programme",
+    "desc": "Engagements politiques, mesures, priorités de mandat et mécanismes de suivi.",
+    "featured": true
+  },
+  {
+    "id": "faq-citoyenne",
+    "title": "FAQ citoyenne officielle",
+    "file": "FAQ_Citoyenne_Officielle.pdf",
+    "section": "Public",
+    "type": "FAQ",
+    "desc": "Questions et réponses pour citoyens, bénévoles, journalistes et observateurs.",
+    "featured": true
+  },
+  {
+    "id": "constitution",
+    "title": "Constitution et normes fondamentales",
+    "file": "Constitution_et_Normes_Fondamentales.pdf",
+    "section": "Corpus institutionnel",
+    "type": "Constitution",
+    "desc": "Normes supérieures, principes constitutionnels et garde-fous institutionnels.",
+    "featured": true
+  },
+  {
+    "id": "lois-organiques",
+    "title": "Lois organiques et architecture institutionnelle",
+    "file": "Lois_Organiques_et_Architecture_Institutionnelle.pdf",
+    "section": "Corpus institutionnel",
+    "type": "Lois organiques",
+    "desc": "Architecture démocratique, contre-pouvoirs, transparence et anti-capture.",
+    "featured": false
+  },
+  {
+    "id": "lois-administratives",
+    "title": "Lois administratives et fonctionnement de l’État",
+    "file": "Lois_Administratives_et_Fonctionnement_Etat.pdf",
+    "section": "Corpus institutionnel",
+    "type": "Lois administratives",
+    "desc": "Règles de fonctionnement administratif, délais, recours, simplicité et service au citoyen.",
+    "featured": false
+  },
+  {
+    "id": "lois-ordinaires",
+    "title": "Lois ordinaires et droit public opérationnel",
+    "file": "Lois_Ordinaires_et_Droit_Public_Operationnel.pdf",
+    "section": "Corpus institutionnel",
+    "type": "Lois ordinaires",
+    "desc": "Application quotidienne des principes publics, économiques, sociaux, numériques et territoriaux.",
+    "featured": false
+  },
+  {
+    "id": "reglements",
+    "title": "Règlements et application normative",
+    "file": "Reglements_et_Application_Normative.pdf",
+    "section": "Corpus institutionnel",
+    "type": "Règlements",
+    "desc": "Modalités techniques d’application, formulaires, procédures et contrôle réglementaire.",
+    "featured": false
+  },
+  {
+    "id": "transition-outil",
+    "title": "Outil de transition constitutionnelle",
+    "file": "Outil_de_Transition_Constitutionnelle.pdf",
+    "section": "Transition",
+    "type": "Transition",
+    "desc": "Système de continuité, conversion et sécurisation juridique durant la transition.",
+    "featured": false
+  },
+  {
+    "id": "volet-1-canada",
+    "title": "Volet 1 - Québec dans le Canada",
+    "file": "Volet_1_Quebec_dans_le_Canada.pdf",
+    "section": "Transition",
+    "type": "Phase I",
+    "desc": "Préparation légale, audits, structuration et absence de rupture juridique.",
+    "featured": false
+  },
+  {
+    "id": "volet-2-transition",
+    "title": "Volet 2 - Transition constitutionnelle",
+    "file": "Volet_2_Transition_Constitutionnelle.pdf",
+    "section": "Transition",
+    "type": "Phase II",
+    "desc": "Substitution progressive, continuité des droits et maintien des services essentiels.",
+    "featured": false
+  },
+  {
+    "id": "volet-3-pays",
+    "title": "Volet 3 - Québec pays souverain",
+    "file": "Volet_3_Quebec_Pays_Souverain.pdf",
+    "section": "Transition",
+    "type": "Phase III",
+    "desc": "Cadre d’effectivité, pleine compétence, institutions et stabilité de l’État souverain.",
+    "featured": false
+  },
+  {
+    "id": "table-concordance",
+    "title": "Table de concordance normative",
+    "file": "Table_de_Concordance_Normative.pdf",
+    "section": "Contrôle",
+    "type": "Concordance",
+    "desc": "Traçabilité entre Constitution, lois, règlements et documents de transition.",
+    "featured": false
+  },
+  {
+    "id": "registre-risques",
+    "title": "Registre des risques et correctifs",
+    "file": "Registre_Risques_et_Correctifs.pdf",
+    "section": "Contrôle",
+    "type": "Risques",
+    "desc": "Risques résiduels, vulnérabilités, correctifs et protections à maintenir.",
+    "featured": false
+  },
+  {
+    "id": "audit-defense",
+    "title": "Audit de défense constitutionnelle",
+    "file": "Audit_Defense_Constitutionnelle.pdf",
+    "section": "Contrôle",
+    "type": "Audit",
+    "desc": "Analyse des attaques possibles, mécanismes de défense et robustesse institutionnelle.",
+    "featured": false
+  },
+  {
+    "id": "code-conduite",
+    "title": "Code de conduite et gouvernance",
+    "file": "Code_de_Conduite_et_Gouvernance.pdf",
+    "section": "Gouvernance",
+    "type": "Code",
+    "desc": "Principes de comportement, intégrité, représentation, plaintes et discipline interne.",
+    "featured": false
+  },
+  {
+    "id": "dossier-etat",
+    "title": "Dossier État - Corpus institutionnel",
+    "file": "Dossier_Etat_Corpus_Institutionnel.pdf",
+    "section": "Corpus institutionnel",
+    "type": "Dossier",
+    "desc": "Corpus institutionnel consolidé et table d’ensemble des documents fondateurs.",
+    "featured": false
+  },
+  {
+    "id": "doctrine-fondatrice",
+    "title": "Doctrine fondatrice du Projet Nova",
+    "file": "Doctrine_Fondatrice_Projet_Nova.pdf",
+    "section": "Gouvernance",
+    "type": "Doctrine",
+    "desc": "Principes doctrinaux, architecture nationale, souveraineté et cohérence politique.",
+    "featured": false
+  },
+  {
+    "id": "formulaire-soutien",
+    "title": "Formulaire de soutien / préadhésion",
+    "file": "Formulaire_Soutien_Preadhesion.pdf",
+    "section": "Participation",
+    "type": "Formulaire",
+    "desc": "Document PDF de soutien, d’intérêt ou de préadhésion au Projet Nova.",
+    "featured": false
+  },
+  {
+    "id": "kit-reseaux",
+    "title": "Kit de publications - réseaux sociaux",
+    "file": "Kit_Publications_Reseaux_Sociaux.pdf",
+    "section": "Communication",
+    "type": "Kit",
+    "desc": "Contenus et repères de communication publique pour diffusion numérique.",
+    "featured": false
+  },
+  {
+    "id": "plan-maitre",
+    "title": "Plan maître de consolidation",
+    "file": "Plan_Maitre_Consolidation.pdf",
+    "section": "Contrôle",
+    "type": "Plan",
+    "desc": "Plan de consolidation, publication et organisation documentaire du corpus.",
+    "featured": false
+  },
+  {
+    "id": "rapport-audit-corrections",
+    "title": "Rapport d’audit et corrections",
+    "file": "Rapport_Audit_Corrections.pdf",
+    "section": "Contrôle",
+    "type": "Rapport",
+    "desc": "Rapport sur les corrections, constats d’audit et améliorations appliquées.",
+    "featured": false
+  },
+  {
+    "id": "rapport-correction-tri",
+    "title": "Rapport de correction, tri et renommage",
+    "file": "Rapport_Correction_Tri_Renommage_Documents.pdf",
+    "section": "Contrôle",
+    "type": "Rapport",
+    "desc": "Rapport de nettoyage documentaire et renommage des fichiers publics.",
+    "featured": false
+  },
+  {
+    "id": "registre-integration",
+    "title": "Registre d’intégration directe",
+    "file": "Registre_Integration_Directe.pdf",
+    "section": "Contrôle",
+    "type": "Registre",
+    "desc": "Registre des intégrations directes et décisions de consolidation documentaire.",
+    "featured": false
+  },
+  {
+    "id": "notice-depot",
+    "title": "Notice de dépôt et archivage",
+    "file": "Notice_Depot_et_Archivage.pdf",
+    "section": "Archives",
+    "type": "Notice",
+    "desc": "Instructions de dépôt, conservation et archivage documentaire.",
+    "featured": false
+  },
+  {
+    "id": "document-reprise",
+    "title": "Document de reprise Projet Nova",
+    "file": "Document_Reprise_Projet_Nova.pdf",
+    "section": "Archives",
+    "type": "Reprise",
+    "desc": "Document de reprise et suivi interne de consolidation du Projet Nova.",
+    "featured": false
+  },
+  {
+    "id": "index-documents",
+    "title": "Index des documents du site web",
+    "file": "Index_Documents_Site_Web_Projet_Nova.pdf",
+    "section": "Archives",
+    "type": "Index",
+    "desc": "Index public des fichiers documentaires présents sur le site web.",
+    "featured": false
+  }
+];
