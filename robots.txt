@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://www.partinova.ca/sitemap.xml
