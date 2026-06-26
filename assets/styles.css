@@ -59,3 +59,61 @@ img{max-width:100%;display:block}
 
 /* Pack officiel site web - Projet Nova */
 .book-cover{width:100%;max-width:440px;border-radius:28px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.15);background:#fff}.media-logo{width:100%;max-width:320px;border-radius:22px;background:var(--navy);padding:22px;margin:16px 0}.single-doc-grid{grid-template-columns:1fr!important}.doc-card.compact-card{display:flex;flex-direction:column}.doc-card.compact-card .card-actions{margin-top:auto}.nova-online-form .check-grid,.nova-online-form .check-grid-single{display:grid;grid-template-columns:1fr!important;gap:12px}.nova-online-form .check-grid label,.nova-online-form .check-grid-single label{display:grid;grid-template-columns:22px 1fr;align-items:start;gap:12px;width:100%;line-height:1.45;white-space:normal;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px;font-weight:700;color:var(--ink)}.nova-online-form .check-grid input[type="checkbox"],.nova-online-form .check-grid-single input[type="checkbox"]{width:18px;height:18px;margin-top:3px;flex:0 0 auto;accent-color:var(--cyan)}.form-section-head{display:flex;align-items:center;gap:12px;margin:28px 0 16px;flex-wrap:wrap}.form-section-head h2{margin:0;color:var(--navy);font-size:1.35rem}.form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.form-grid-span{grid-column:1/-1}.notice-box{background:#fff8e8;border:1px solid #f0d59a;color:#4f3b09;border-radius:18px;padding:16px 18px;margin:14px 0 20px;line-height:1.55}.nova-online-form .field textarea[readonly]{background:var(--soft);min-height:120px}.viewer-panel iframe{height:780px}.topbar-social{gap:20px;flex-wrap:wrap}.main-nav{gap:2px}.nav-link{padding:10px 10px;font-size:.9rem}@media(max-width:900px){.main-nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-top:1px solid var(--line);padding:18px;box-shadow:0 20px 30px rgba(6,26,47,.08);flex-direction:column;align-items:stretch}.main-nav.open{display:flex}.menu-toggle{display:flex}.header-inner{position:relative}.nav-link{border-radius:14px}}@media(max-width:700px){.form-grid-2{grid-template-columns:1fr}.form-grid-span{grid-column:auto}.viewer-panel iframe{height:560px}.book-cover{max-width:100%}}
+
+
+/* Correction du menu mobile */
+.site-header{
+  position:relative;
+  z-index:1000;
+}
+
+.menu-toggle{
+  cursor:pointer;
+}
+
+@media (max-width:1100px){
+  .header-inner{
+    position:relative;
+  }
+
+  .menu-toggle{
+    display:flex !important;
+  }
+
+  .main-nav{
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    z-index:1001;
+    display:none !important;
+    flex-direction:column;
+    align-items:stretch;
+    gap:8px;
+    background:#fff;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:18px;
+    box-shadow:0 24px 40px rgba(6,26,47,.12);
+  }
+
+  .main-nav.open{
+    display:flex !important;
+  }
+
+  .main-nav .nav-link{
+    width:100%;
+    border-radius:14px;
+    padding:14px 18px;
+  }
+}
+
+@media (min-width:1101px){
+  .main-nav{
+    display:flex !important;
+  }
+
+  .menu-toggle{
+    display:none !important;
+  }
+}
