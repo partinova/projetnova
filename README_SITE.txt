@@ -1,7 +1,7 @@
-Site Projet Nova corrigé - PDF seulement
+Projet Nova — site public corrigé
 
-Pages principales : Accueil, Manifeste, Mission, Programme, Livre Nova, Transition, Documents, FAQ, Participer, Contact, Visionneuse.
-Documents PDF publics : 30
-DOCX public : 0
-Archives publiques référencées : 0
-Addendum séparé : retiré du site public.
+- Bannière officielle conservée : assets/banniere-nova.jpg
+- Visionneuse PDF intégrée restaurée : visionneuse.html?doc=...
+- Téléchargement uniquement par boutons explicites « Télécharger le PDF »
+- Page recrutement avec formulaire intégré : recrutement.html
+- Aucun lien public DOCX, ZIP, RAR ou 7Z.

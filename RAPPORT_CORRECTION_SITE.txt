@@ -1,10 +1,1 @@
-RAPPORT DE CORRECTION - PROJET NOVA
-
-Pages HTML générées : 15
-Documents PDF publics : 30
-Visionneuse PDF centrale : visionneuse.html
-Page Manifeste refaite : manifeste.html
-Références DOCX/ZIP/RAR publiques : 0
-Addendum séparé : retiré du site public
-
-Validation : aucun lien local brisé détecté.
+Corrections appliquées : bannière officielle, visionneuse PDF intégrée, séparation Visionner/Télécharger, page Recrutement et formulaire intégré, nettoyage des références Word/archives.
