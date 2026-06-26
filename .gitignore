@@ -1,0 +1,8 @@
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.gz
+__MACOSX/
+.DS_Store
