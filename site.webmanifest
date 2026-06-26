@@ -1,6 +1,10 @@
 {
   "name": "Projet Nova",
   "short_name": "Projet Nova",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f8fb",
+  "theme_color": "#0b4da2",
   "icons": [
     {
       "src": "assets/android-chrome-192x192.png",
@@ -12,8 +16,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "theme_color": "#06172d",
-  "background_color": "#f4f8fb",
-  "display": "standalone"
+  ]
 }
