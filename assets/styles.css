@@ -117,3 +117,10 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}img{max-w
   .section{padding:58px 0}
   .page-hero .container,.hero .container{padding:26px 22px;border-radius:24px}
 }
+
+/* Harmonisation v9 */
+.notice-box{background:#fff;border:1px solid var(--line);border-left:5px solid var(--cyan);border-radius:18px;padding:20px 22px;color:#22354d;box-shadow:0 10px 28px rgba(6,26,47,.06)}
+.form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-grid-span{grid-column:1/-1}.form-card h2,.side-card h3{color:#10223a}.form-card p,.side-card p,.process-list{color:var(--muted)}
+.team-grid{display:grid;gap:28px}.member-card{display:grid;grid-template-columns:320px 1fr;gap:0;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 10px 30px rgba(6,26,47,.06)}.member-photo-wrap{background:#eef6fb;min-height:340px}.member-photo{width:100%;height:100%;object-fit:cover;object-position:center}.placeholder .member-photo{object-fit:contain;padding:34px}.member-content{padding:40px}.member-content h2{color:#10223a;margin:.4rem 0}.member-location{font-weight:900;color:#4c5f75}
+.phase-card span,.feature-icon{background:#041528;color:#fff}.side-card ol{padding-left:22px}.side-card li{margin-bottom:10px}.page-hero .container p{color:#3f5268}.section-lead{color:#4c5f75}.doc-card p{color:#4c5f75}.footer li a{line-height:1.6}
+@media(max-width:800px){.form-grid-2,.member-card{grid-template-columns:1fr}.member-photo-wrap{min-height:280px}.member-content{padding:28px}.form-grid-span{grid-column:auto}}
