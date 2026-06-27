@@ -58,3 +58,29 @@
     }
   });
 })();
+
+
+// Finition AAA : comportement mobile et formulaires
+(function(){
+  function onReady(fn){document.readyState !== 'loading' ? fn() : document.addEventListener('DOMContentLoaded', fn);}
+  onReady(function(){
+    document.querySelectorAll('[data-main-nav] a').forEach(function(a){
+      a.addEventListener('click', function(){
+        const nav=document.querySelector('[data-main-nav]');
+        const toggle=document.querySelector('[data-menu-toggle]');
+        if(nav && nav.classList.contains('open')){
+          nav.classList.remove('open');
+          if(toggle) toggle.setAttribute('aria-expanded','false');
+        }
+      });
+    });
+    document.querySelectorAll('form.nova-online-form').forEach(function(form){
+      form.addEventListener('submit', function(){
+        const emailField=form.querySelector('input[type="email"][name="email"], input[type="email"]');
+        const email=emailField ? emailField.value.trim() : '';
+        form.querySelectorAll('input[name="_replyto"], input[data-copy-replyto]').forEach(function(i){i.value=email;});
+        form.querySelectorAll('input[name="_cc"], input[data-copy-cc]').forEach(function(i){i.value=email;});
+      });
+    });
+  });
+})();

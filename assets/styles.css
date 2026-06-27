@@ -124,3 +124,86 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}img{max-w
 .team-grid{display:grid;gap:28px}.member-card{display:grid;grid-template-columns:320px 1fr;gap:0;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 10px 30px rgba(6,26,47,.06)}.member-photo-wrap{background:#eef6fb;min-height:340px}.member-photo{width:100%;height:100%;object-fit:cover;object-position:center}.placeholder .member-photo{object-fit:contain;padding:34px}.member-content{padding:40px}.member-content h2{color:#10223a;margin:.4rem 0}.member-location{font-weight:900;color:#4c5f75}
 .phase-card span,.feature-icon{background:#041528;color:#fff}.side-card ol{padding-left:22px}.side-card li{margin-bottom:10px}.page-hero .container p{color:#3f5268}.section-lead{color:#4c5f75}.doc-card p{color:#4c5f75}.footer li a{line-height:1.6}
 @media(max-width:800px){.form-grid-2,.member-card{grid-template-columns:1fr}.member-photo-wrap{min-height:280px}.member-content{padding:28px}.form-grid-span{grid-column:auto}}
+
+
+/* Correctifs formulaires v10 */
+.form-section-head{margin:30px 0 14px}.form-section-head h2{margin:.35rem 0 .4rem;color:#10223a}.form-help{margin:.35rem 0 0;color:#4c5f75;font-size:.98rem}.check-grid{display:grid;grid-template-columns:1fr;gap:10px;margin:12px 0 24px}.professional-checks label,.consent-line label{display:flex;align-items:flex-start;gap:12px;background:#f8fbff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;color:#10223a;font-weight:750;line-height:1.45}.professional-checks input,.consent-line input{width:18px;height:18px;min-width:18px;margin-top:3px;accent-color:#24c4df}.professional-checks span,.consent-line span{display:block}.nova-online-form .notice-box{margin:14px 0 18px}.nova-online-form textarea[hidden]{display:none!important}.nova-online-form .btn{margin-top:0}.sticky-side{position:sticky;top:24px}.form-card .field span{font-weight:900;color:#10223a}.form-card .field input,.form-card .field textarea,.form-card .field select{color:#10223a;background:#fff}.form-status{min-height:1.4em;color:#0f6f86}.contact-layout{align-items:start}
+@media(max-width:800px){.professional-checks label,.consent-line label{padding:13px 14px}.sticky-side{position:static}.contact-layout{gap:22px}}
+
+
+/* Finition AAA - Projet Nova */
+:root{
+  --deep:#020b18;
+  --focus:#10d7f0;
+}
+body{font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+:focus-visible{outline:4px solid rgba(36,196,223,.35);outline-offset:3px;border-radius:10px;}
+::selection{background:rgba(36,196,223,.25);color:#06172a;}
+.site-header{padding-top:16px;}
+.header-combined{max-width:1280px;margin-inline:auto;}
+.header-top{min-height:132px;}
+.brand-inline img{width:128px;height:128px;}
+.brand-inline-text strong{font-size:2.05rem;}
+.header-title{letter-spacing:-.045em;text-wrap:balance;}
+.header-socials a{opacity:.92;}
+.header-socials a:focus-visible,.header-socials a:hover{opacity:1;}
+.header-nav-row{min-height:82px;display:flex;align-items:center;}
+.main-nav{width:100%;}
+.nav-link{line-height:1.1;}
+.nav-link.active{box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);}
+.banner{border:1px solid rgba(4,21,40,.08);}
+.page-hero .container,.hero .container{position:relative;overflow:hidden;}
+.page-hero .container:after,.hero .container:after{content:"";position:absolute;right:-120px;top:-120px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(36,196,223,.14),rgba(36,196,223,0) 68%);pointer-events:none;}
+.page-hero h1,.hero-copy h1{text-wrap:balance;}
+.page-hero p,.hero-copy p,.section-head p,.large-text,.section-lead{line-height:1.75;}
+.section{position:relative;}
+.feature-card,.value-card,.doc-card,.phase-card,.form-card,.side-card,.news-card,.doc-focus{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;}
+.feature-card:hover,.value-card:hover,.doc-card:hover,.phase-card:hover,.news-card:hover{transform:translateY(-2px);box-shadow:0 18px 42px rgba(6,26,47,.10);border-color:#c8d8e7;}
+.btn{white-space:nowrap;letter-spacing:-.01em;}
+.btn-primary{background:linear-gradient(135deg,#20d5e4,#32a8ff);}
+.btn-outline:hover{background:#f2f8fc;border-color:#b7c8da;}
+.notice-box{line-height:1.65;}
+.form-card{position:relative;}
+.form-card:before{content:"";position:absolute;left:0;top:0;width:100%;height:5px;background:linear-gradient(90deg,var(--cyan),var(--gold));}
+.form-section-head{padding-top:8px;border-top:1px solid rgba(11,36,63,.08);}
+.form-section-head:first-of-type{border-top:0;padding-top:0;}
+.form-section-head h2{font-size:1.6rem;letter-spacing:-.035em;}
+.form-help{line-height:1.65;}
+.check-grid.professional-checks{gap:12px;}
+.professional-checks label,.consent-line label{min-height:54px;background:linear-gradient(180deg,#ffffff,#f7fbff);border-color:#d5e3ef;box-shadow:0 6px 18px rgba(6,26,47,.035);}
+.professional-checks label:hover,.consent-line label:hover{border-color:#9fc7d5;box-shadow:0 10px 24px rgba(6,26,47,.065);}
+.professional-checks span,.consent-line span{color:#182d46;font-weight:760;}
+.professional-checks input,.consent-line input{transform:translateY(1px);}
+.field input,.field select,.field textarea,.search-input,.select-input{transition:border-color .15s ease,box-shadow .15s ease,background .15s ease;}
+.field input:focus,.field select:focus,.field textarea:focus,.search-input:focus,.select-input:focus{border-color:var(--cyan);box-shadow:0 0 0 4px rgba(36,196,223,.13);outline:none;}
+.field textarea{line-height:1.6;}
+.form-status{font-weight:900;background:#f2fbfd;border-radius:14px;padding:0 0;}
+.side-card.sticky-side{top:28px;}
+.footer{border-top:1px solid rgba(255,255,255,.08);}
+.footer img{filter:drop-shadow(0 8px 18px rgba(0,0,0,.28));}
+.footer a:hover{color:#24c4df;text-decoration:none;}
+.viewer-page-card{margin-bottom:24px;}
+.viewer-top .btn{min-height:42px;}
+@media (min-width:1101px){
+  .contact-layout{grid-template-columns:minmax(0,1.45fr) minmax(320px,.55fr);}
+  .professional-checks{grid-template-columns:1fr;}
+  .main-nav{justify-content:flex-start;}
+}
+@media (max-width:1100px){
+  .header-top{min-height:auto;}
+  .brand-inline img{width:96px;height:96px;}
+  .header-title{text-align:center;}
+  .header-nav-row{display:block;min-height:auto;}
+}
+@media (max-width:700px){
+  .page-hero .container,.hero .container{padding:28px 22px;}
+  .hero-copy h1,.page-hero h1{font-size:clamp(2.05rem,13vw,3.2rem);}
+  .btn{width:100%;}
+  .card-actions .btn,.hero-actions .btn{width:100%;}
+  .form-card,.side-card,.doc-card,.feature-card,.value-card,.phase-card{padding:22px;}
+  .professional-checks label,.consent-line label{padding:14px 13px;}
+  .footer{padding-top:46px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important;}
+}
