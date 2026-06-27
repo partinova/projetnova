@@ -207,3 +207,69 @@ body{font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:g
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important;}
 }
+
+
+/* Correctif v12 — alignement AAA des cases à cocher et photo équipe */
+.form-card .check-grid,
+.form-card .check-grid.professional-checks{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  gap:12px !important;
+  align-items:stretch !important;
+  width:100% !important;
+}
+.form-card .professional-checks label,
+.form-card .consent-line label{
+  display:grid !important;
+  grid-template-columns:22px minmax(0,1fr) !important;
+  column-gap:14px !important;
+  align-items:start !important;
+  width:100% !important;
+  margin:0 !important;
+  padding:15px 16px !important;
+  min-height:auto !important;
+  line-height:1.5 !important;
+  text-align:left !important;
+}
+.form-card .professional-checks input[type=checkbox],
+.form-card .consent-line input[type=checkbox]{
+  width:18px !important;
+  height:18px !important;
+  min-width:18px !important;
+  margin:3px 0 0 0 !important;
+  padding:0 !important;
+  align-self:start !important;
+  justify-self:start !important;
+  transform:none !important;
+  flex:none !important;
+  accent-color:#24c4df;
+}
+.form-card .professional-checks label span,
+.form-card .consent-line label span{
+  display:block !important;
+  min-width:0 !important;
+  color:#182d46 !important;
+  font-weight:760 !important;
+  overflow-wrap:anywhere !important;
+}
+.form-card .professional-checks label + label{margin-top:0 !important;}
+.form-card .consent-line{display:block !important;}
+.form-card .consent-line label{margin-top:10px !important;}
+.member-photo-wrap{display:flex;align-items:center;justify-content:center;}
+.member-photo-contain{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  padding:18px !important;
+  background:#eef6fb;
+}
+@media(max-width:700px){
+  .form-card .professional-checks label,
+  .form-card .consent-line label{
+    grid-template-columns:22px minmax(0,1fr) !important;
+    padding:14px 13px !important;
+    column-gap:12px !important;
+  }
+  .member-photo-contain{padding:12px !important;}
+}
