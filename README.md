@@ -1,11 +1,5 @@
 # Projet Nova — site public
 
-Version corrigée pour publication publique.
+Version harmonisée v9. Site statique GitHub Pages avec pages Transition, Propositions et Équipe refaites, documents publics PDF, visionneuse intégrée et formulaire de contact/proposition.
 
-## Documents affichés sur le site
-
-Seuls les 12 PDF publics approuvés sont dans `/documents/` et affichés par la visionneuse.
-
-Aucun DOCX, ZIP, 7Z, RAR ou document technique non approuvé n’est affiché publiquement.
-
-La visionneuse affiche les PDF dans le site avec PDF.js. Le téléchargement se fait seulement par clic volontaire sur le bouton « Télécharger le PDF ».
+Publication publique : PDF seulement dans `/documents/`. Les DOCX, ZIP, 7Z, RAR et archives de travail ne doivent pas être publiés.
