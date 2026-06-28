@@ -1,18 +1,19 @@
-# Projet Nova — site public
+# Projet Nova — site AAA professionnel v13
 
-Version harmonisée v9. Site statique GitHub Pages avec pages Transition, Propositions et Équipe refaites, documents publics PDF, visionneuse intégrée et formulaire de contact/proposition.
+Site statique officiel du Projet Nova.
 
-Publication publique : PDF seulement dans `/documents/`. Les DOCX, ZIP, 7Z, RAR et archives de travail ne doivent pas être publiés.
+## Contenu
 
+- Pages HTML harmonisées.
+- Bibliothèque documentaire mise à jour à partir du paquet `documents.7z`.
+- Visionneuse PDF intégrée au site.
+- Téléchargement seulement par clic volontaire.
+- Aucun DOCX, ZIP, 7Z ou RAR publié dans le site.
 
-## Version AAA professionnelle
+## Documents
 
-Cette version contient :
+Le dossier `/documents/` contient les PDF officiels fournis pour le site.
 
-- Pages publiques harmonisées ;
-- Navigation complète : Accueil, Comprendre Nova, Manifeste, Livre Nova, Programme, Transition, Gouvernance, Équipe, Propositions, Presse, Recrutement, Documents, FAQ, Contact ;
-- Visionneuse PDF sur le site ;
-- Téléchargement PDF seulement par clic volontaire ;
-- Formulaires Contact, Propositions et Recrutement configurés avec accusé/copie par courriel lorsque FormSubmit le permet ;
-- 13 documents PDF publics dans `/documents/` ;
-- Aucun DOCX, ZIP, RAR ou 7Z publié dans le site.
+## Déploiement
+
+Téléverser le contenu du dossier dans le dépôt GitHub Pages, pas le ZIP lui-même.
