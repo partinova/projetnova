@@ -1,171 +1,184 @@
 {
+  "index-public": {
+    "slug": "index-public",
+    "section": "Repères publics",
+    "type": "Document public",
+    "title": "Index des documents publics",
+    "description": "Index officiel des documents publiés dans la bibliothèque du site du Projet Nova.",
+    "featured": false,
+    "updated": "2026-06-29",
+    "format": "PDF",
+    "pdf": "documents/00_Index_Documents_Publics_Site_Web_Projet_Nova.pdf",
+    "formats": [
+      "PDF"
+    ]
+  },
+  "resume": {
+    "slug": "resume",
+    "section": "Accueil",
+    "type": "Document public",
+    "title": "Résumé officiel — 1 page",
+    "description": "Résumé court pour comprendre rapidement les objectifs, les priorités et la démarche du Projet Nova.",
+    "featured": true,
+    "updated": "2026-06-29",
+    "format": "PDF",
+    "pdf": "documents/01_Resume_Officiel_1_Page_Projet_Nova.pdf",
+    "formats": [
+      "PDF"
+    ]
+  },
+  "depliant": {
+    "slug": "depliant",
+    "section": "Accueil",
+    "type": "Document public",
+    "title": "Dépliant public — 4 pages",
+    "description": "Présentation publique concise, conçue pour partager les repères essentiels du Projet Nova.",
+    "featured": false,
+    "updated": "2026-06-29",
+    "format": "PDF",
+    "pdf": "documents/02_Depliant_Public_4_Pages_Projet_Nova.pdf",
+    "formats": [
+      "PDF"
+    ]
+  },
+  "livre-court": {
+    "slug": "livre-court",
+    "section": "Livre Nova",
+    "type": "Document public",
+    "title": "Livre Nova — version courte",
+    "description": "Version accessible du Livre Nova pour comprendre la vision générale sans lire le document complet.",
+    "featured": true,
+    "updated": "2026-06-29",
+    "format": "PDF",
+    "pdf": "documents/03_Livre_Nova_Version_Courte.pdf",
+    "formats": [
+      "PDF"
+    ]
+  },
+  "livre-complet": {
+    "slug": "livre-complet",
+    "section": "Livre Nova",
+    "type": "Document public",
+    "title": "Livre Nova complet",
+    "description": "Document complet de référence présentant la vision, l’architecture et les fondements du Projet Nova.",
+    "featured": true,
+    "updated": "2026-06-29",
+    "format": "PDF",
+    "pdf": "documents/04_Livre_Nova_Complet.pdf",
+    "formats": [
+      "PDF"
+    ]
+  },
   "manifeste": {
     "slug": "manifeste",
-    "section": "Vision",
+    "section": "Programme",
     "type": "Document public",
     "title": "Manifeste officiel",
-    "description": "Synthèse publique, mission nationale et engagements du Projet Nova.",
-    "tags": ["manifeste", "vision", "engagements"],
-    "featured": true,
-    "updated": "2026-06-26",
+    "description": "Texte de référence qui expose la mission, l’appel public et les engagements fondamentaux du Projet Nova.",
+    "featured": false,
+    "updated": "2026-06-29",
     "format": "PDF",
-    "pdf": "documents/Manifeste_V1_6.pdf",
-    "formats": ["PDF"]
+    "pdf": "documents/05_Manifeste_Officiel_Projet_Nova.pdf",
+    "formats": [
+      "PDF"
+    ]
+  },
+  "faq-citoyenne": {
+    "slug": "faq-citoyenne",
+    "section": "Programme",
+    "type": "Document public",
+    "title": "FAQ citoyenne officielle",
+    "description": "Réponses structurées aux questions citoyennes les plus fréquentes sur la démarche Nova.",
+    "featured": false,
+    "updated": "2026-06-29",
+    "format": "PDF",
+    "pdf": "documents/06_FAQ_Citoyenne_Officielle_Projet_Nova.pdf",
+    "formats": [
+      "PDF"
+    ]
   },
   "programme": {
     "slug": "programme",
     "section": "Programme",
     "type": "Document public",
-    "title": "Programme V1.6",
-    "description": "Engagements politiques vérifiables, responsables, échéances et mécanismes de correction.",
-    "tags": ["programme", "engagements", "mandat"],
+    "title": "Programme électoral complet",
+    "description": "Engagements politiques, orientations publiques et mesures structurées du Projet Nova.",
     "featured": true,
-    "updated": "2026-06-26",
+    "updated": "2026-06-29",
     "format": "PDF",
-    "pdf": "documents/Programme_V1_6.pdf",
-    "formats": ["PDF"]
+    "pdf": "documents/07_Programme_Electoral_Complet_Projet_Nova.pdf",
+    "formats": [
+      "PDF"
+    ]
   },
-  "livre-nova": {
-    "slug": "livre-nova",
-    "section": "Livre Nova",
+  "code-conduite": {
+    "slug": "code-conduite",
+    "section": "Gouvernance",
     "type": "Document public",
-    "title": "Livre Nova",
-    "description": "Document citoyen complet de doctrine, programme et gouvernance.",
-    "tags": ["livre", "doctrine", "gouvernance"],
-    "featured": true,
-    "updated": "2026-06-26",
-    "format": "PDF",
-    "pdf": "documents/Livre_Nova_V1_6.pdf",
-    "formats": ["PDF"]
-  },
-  "constitution": {
-    "slug": "constitution",
-    "section": "Documents officiels",
-    "type": "Document officiel",
-    "title": "Constitution",
-    "description": "Constitution et normes fondamentales de la version officielle intégrée.",
-    "tags": ["constitution", "normes", "souveraineté"],
+    "title": "Code de conduite et gouvernance",
+    "description": "Cadre d’intégrité, de conduite, de transparence et de gouvernance interne du Projet Nova.",
     "featured": false,
-    "updated": "2026-06-26",
+    "updated": "2026-06-29",
     "format": "PDF",
-    "pdf": "documents/Constitution_V1_6.pdf",
-    "formats": ["PDF"]
+    "pdf": "documents/08_Code_de_Conduite_Gouvernance_Nova.pdf",
+    "formats": [
+      "PDF"
+    ]
   },
-  "lois-organiques": {
-    "slug": "lois-organiques",
-    "section": "Documents officiels",
-    "type": "Document officiel",
-    "title": "Lois organiques",
-    "description": "Architecture institutionnelle, démocratie continue, transparence et contrôles.",
-    "tags": ["lois", "institutions", "contrôle"],
-    "featured": false,
-    "updated": "2026-06-26",
-    "format": "PDF",
-    "pdf": "documents/Lois_Organiques_V1_6.pdf",
-    "formats": ["PDF"]
-  },
-  "lois-administratives": {
-    "slug": "lois-administratives",
-    "section": "Documents officiels",
-    "type": "Document officiel",
-    "title": "Lois administratives",
-    "description": "Fonctionnement administratif, légalité, transparence, délais et recours.",
-    "tags": ["administration", "État", "recours"],
-    "featured": false,
-    "updated": "2026-06-26",
-    "format": "PDF",
-    "pdf": "documents/Lois_Administratives_V1_6.pdf",
-    "formats": ["PDF"]
-  },
-  "lois-ordinaires": {
-    "slug": "lois-ordinaires",
-    "section": "Documents officiels",
-    "type": "Document officiel",
-    "title": "Lois ordinaires",
-    "description": "Droit public opérationnel, services, économie, logement, sécurité et numérique.",
-    "tags": ["lois", "services", "économie"],
-    "featured": false,
-    "updated": "2026-06-26",
-    "format": "PDF",
-    "pdf": "documents/Lois_Ordinaires_V1_6.pdf",
-    "formats": ["PDF"]
-  },
-  "reglements": {
-    "slug": "reglements",
-    "section": "Documents officiels",
-    "type": "Document officiel",
-    "title": "Règlements",
-    "description": "Application normative, règlements, directives, formulaires et procédures.",
-    "tags": ["règlements", "application", "procédures"],
-    "featured": false,
-    "updated": "2026-06-26",
-    "format": "PDF",
-    "pdf": "documents/Reglements_V1_6.pdf",
-    "formats": ["PDF"]
-  },
-  "registre-risques": {
-    "slug": "registre-risques",
-    "section": "Transparence",
-    "type": "Document officiel",
-    "title": "Registre des risques",
-    "description": "Risques résiduels, correctifs et protections à maintenir.",
-    "tags": ["risques", "correctifs", "transparence"],
-    "featured": false,
-    "updated": "2026-06-26",
-    "format": "PDF",
-    "pdf": "documents/Registre_Risques_V1_6.pdf",
-    "formats": ["PDF"]
-  },
-  "rapport-integration": {
-    "slug": "rapport-integration",
-    "section": "Transparence",
-    "type": "Document officiel",
-    "title": "Rapport d’intégration",
-    "description": "Confirmation des intégrations et correctifs incorporés au corpus V1.6.",
-    "tags": ["rapport", "intégration", "version"],
-    "featured": false,
-    "updated": "2026-06-26",
-    "format": "PDF",
-    "pdf": "documents/Rapport_Integration_V1_6.pdf",
-    "formats": ["PDF"]
-  },
-  "rapport-comparaison": {
-    "slug": "rapport-comparaison",
-    "section": "Transparence",
-    "type": "Document officiel",
-    "title": "Rapport de comparaison / intégration",
-    "description": "Comparaison des archives et décision éditoriale sur les documents officiels intégrés.",
-    "tags": ["rapport", "comparaison", "archives"],
-    "featured": false,
-    "updated": "2026-06-26",
-    "format": "PDF",
-    "pdf": "documents/Rapport_Comparaison_Integration_V1_6.pdf",
-    "formats": ["PDF"]
-  },
-  "index-general": {
-    "slug": "index-general",
-    "section": "Index",
-    "type": "Index",
-    "title": "Index général",
-    "description": "Index général du corpus et repères de version officielle V1.6.",
-    "tags": ["index", "version", "repérage"],
-    "featured": false,
-    "updated": "2026-06-26",
-    "format": "PDF",
-    "pdf": "documents/Index_V1_6.pdf",
-    "formats": ["PDF"]
-  },
-  "faq": {
-    "slug": "faq",
-    "section": "FAQ",
+  "dossier-presse": {
+    "slug": "dossier-presse",
+    "section": "Médias / Presse",
     "type": "Document public",
-    "title": "FAQ citoyenne officielle",
-    "description": "Questions et réponses publiques du Projet Nova.",
-    "tags": ["faq", "questions", "citoyens"],
+    "title": "Dossier de presse officiel",
+    "description": "Document de référence pour les médias, partenaires, observateurs et relais d’information.",
     "featured": false,
-    "updated": "2026-06-26",
+    "updated": "2026-06-29",
     "format": "PDF",
-    "pdf": "documents/FAQ_V1_6.pdf",
-    "formats": ["PDF"]
+    "pdf": "documents/09_Dossier_de_Presse_Projet_Nova.pdf",
+    "formats": [
+      "PDF"
+    ]
+  },
+  "formulaire-soutien": {
+    "slug": "formulaire-soutien",
+    "section": "Recrutement",
+    "type": "Document public",
+    "title": "Formulaire de soutien / préadhésion",
+    "description": "Version PDF du formulaire de soutien et de préadhésion au Projet Nova.",
+    "featured": false,
+    "updated": "2026-06-29",
+    "format": "PDF",
+    "pdf": "documents/10_Formulaire_Soutien_Preadhesion_Projet_Nova.pdf",
+    "formats": [
+      "PDF"
+    ]
+  },
+  "charte-visuelle": {
+    "slug": "charte-visuelle",
+    "section": "Médias / Presse",
+    "type": "Document public",
+    "title": "Charte visuelle officielle",
+    "description": "Repères d’identité visuelle, usages du logo, couleurs, bannière et communication publique.",
+    "featured": false,
+    "updated": "2026-06-29",
+    "format": "PDF",
+    "pdf": "documents/11_Charte_Visuelle_Projet_Nova.pdf",
+    "formats": [
+      "PDF"
+    ]
+  },
+  "resume-executif": {
+    "slug": "resume-executif",
+    "section": "Présentation publique",
+    "type": "Document public",
+    "title": "Résumé exécutif officiel du Système Nova",
+    "description": "Synthèse exécutive de l’architecture Nova, utile pour comprendre la démarche complète.",
+    "featured": false,
+    "updated": "2026-06-29",
+    "format": "PDF",
+    "pdf": "documents/12_Resume_Executif_Officiel_Systeme_Nova.pdf",
+    "formats": [
+      "PDF"
+    ]
   }
 }
