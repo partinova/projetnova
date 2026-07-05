@@ -1,15 +1,5 @@
 window.NOVA_DOCUMENTS = [
   {
-    "id": "index-public",
-    "order": "00",
-    "title": "Index des documents publics",
-    "section": "Repères publics",
-    "description": "Index officiel des documents publiés dans la bibliothèque du site du Projet Nova.",
-    "file": "00_Index_Documents_Publics_Site_Web_Projet_Nova.pdf",
-    "path": "documents/00_Index_Documents_Publics_Site_Web_Projet_Nova.pdf",
-    "format": "PDF"
-  },
-  {
     "id": "resume",
     "order": "01",
     "title": "Résumé officiel — 1 page",
@@ -72,9 +62,9 @@ window.NOVA_DOCUMENTS = [
   {
     "id": "programme",
     "order": "07",
-    "title": "Programme électoral complet",
+    "title": "Programme public complet",
     "section": "Programme",
-    "description": "Engagements politiques, orientations publiques et mesures structurées du Projet Nova.",
+    "description": "Orientations publiques, propositions et mesures structurées du Projet Nova.",
     "file": "07_Programme_Electoral_Complet_Projet_Nova.pdf",
     "path": "documents/07_Programme_Electoral_Complet_Projet_Nova.pdf",
     "format": "PDF"
@@ -92,7 +82,7 @@ window.NOVA_DOCUMENTS = [
   {
     "id": "dossier-presse",
     "order": "09",
-    "title": "Dossier de presse officiel",
+    "title": "Dossier de presse",
     "section": "Médias / Presse",
     "description": "Document de référence pour les médias, partenaires, observateurs et relais d’information.",
     "file": "09_Dossier_de_Presse_Projet_Nova.pdf",
@@ -104,7 +94,7 @@ window.NOVA_DOCUMENTS = [
     "order": "10",
     "title": "Formulaire de soutien / préadhésion",
     "section": "Recrutement",
-    "description": "Version PDF du formulaire de soutien et de préadhésion au Projet Nova.",
+    "description": "Version PDF du formulaire de soutien et de préadhésion, sans contribution financière.",
     "file": "10_Formulaire_Soutien_Preadhesion_Projet_Nova.pdf",
     "path": "documents/10_Formulaire_Soutien_Preadhesion_Projet_Nova.pdf",
     "format": "PDF"
@@ -112,9 +102,9 @@ window.NOVA_DOCUMENTS = [
   {
     "id": "charte-visuelle",
     "order": "11",
-    "title": "Charte visuelle officielle",
-    "section": "Médias / Presse",
-    "description": "Repères d’identité visuelle, usages du logo, couleurs, bannière et communication publique.",
+    "title": "Charte visuelle",
+    "section": "Identité",
+    "description": "Repères visuels publics du Projet Nova.",
     "file": "11_Charte_Visuelle_Projet_Nova.pdf",
     "path": "documents/11_Charte_Visuelle_Projet_Nova.pdf",
     "format": "PDF"
@@ -122,9 +112,9 @@ window.NOVA_DOCUMENTS = [
   {
     "id": "resume-executif",
     "order": "12",
-    "title": "Résumé exécutif officiel du Système Nova",
-    "section": "Présentation publique",
-    "description": "Synthèse exécutive de l’architecture Nova, utile pour comprendre la démarche complète.",
+    "title": "Résumé exécutif du Système Nova",
+    "section": "Synthèse",
+    "description": "Résumé exécutif du cadre général Nova, publié à titre indicatif et préparatoire.",
     "file": "12_Resume_Executif_Officiel_Systeme_Nova.pdf",
     "path": "documents/12_Resume_Executif_Officiel_Systeme_Nova.pdf",
     "format": "PDF"
