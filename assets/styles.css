@@ -320,3 +320,18 @@ body{font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:g
   background:#24c4df;
   color:#001526;
 }
+
+
+/* Correctif v4 — lisibilité du sous-titre Projet Nova */
+.brand-inline .brand-inline-text small,
+.brand-inline-text small{
+  color:#ffffff !important;
+  opacity:1 !important;
+  font-weight:800 !important;
+  text-shadow:0 2px 6px rgba(0,0,0,.55) !important;
+}
+.brand-inline:visited .brand-inline-text small,
+.brand-inline:hover .brand-inline-text small,
+.brand-inline:focus .brand-inline-text small{
+  color:#ffffff !important;
+}
