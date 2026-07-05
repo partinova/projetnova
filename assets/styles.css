@@ -335,3 +335,70 @@ body{font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:g
 .brand-inline:focus .brand-inline-text small{
   color:#ffffff !important;
 }
+
+
+/* v13 — En-tête professionnel type bannière, inspiré de l’image 2 */
+.site-header{padding:14px 0 8px;}
+.header-combined{border-radius:34px;background:linear-gradient(90deg,#031020 0%,#07203f 100%);border:1px solid rgba(153,183,214,.22);box-shadow:0 18px 42px rgba(1,10,20,.28);}
+.header-top{display:block !important;padding:20px 26px 12px !important;min-height:auto !important;}
+.header-hero{display:grid;grid-template-columns:minmax(96px,150px) minmax(0,1fr) minmax(96px,150px);align-items:center;gap:18px;min-height:215px;}
+.header-side-logo{display:flex;align-items:center;justify-content:center;min-width:0;text-decoration:none;}
+.header-side-logo img{width:min(11vw,150px);height:auto;object-fit:contain;filter:drop-shadow(0 16px 24px rgba(0,0,0,.28));}
+.header-center{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-width:0;}
+.header-title-pro{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.35rem,4.5vw,5rem);line-height:1.08;font-weight:700;letter-spacing:-.03em;color:#f7fbff;text-wrap:balance;text-shadow:0 3px 16px rgba(0,0,0,.16);}
+.header-title-pro::after{content:"";display:block;width:min(100%,980px);height:2px;margin:14px auto 0;background:linear-gradient(90deg,rgba(255,255,255,.04),rgba(255,255,255,.88),rgba(36,196,223,.95),rgba(255,255,255,.88),rgba(255,255,255,.04));box-shadow:0 0 18px rgba(36,196,223,.35);}
+.header-project-pro{margin-top:14px;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:clamp(1.9rem,3.9vw,4rem);line-height:1.05;font-weight:700;color:#34d8f1;letter-spacing:-.02em;text-shadow:0 0 18px rgba(36,196,223,.15);}
+.header-project-pro::after{content:"";display:block;width:min(100%,480px);height:1px;margin:12px auto 0;background:linear-gradient(90deg,rgba(36,196,223,0),rgba(36,196,223,.95),rgba(36,196,223,0));}
+.header-tagline-wrap{display:flex;align-items:center;gap:22px;margin-top:16px;}
+.header-tagline-wrap::before,.header-tagline-wrap::after{content:"";display:block;width:80px;max-width:12vw;height:1px;background:linear-gradient(90deg,rgba(36,196,223,0),rgba(36,196,223,.95));}
+.header-tagline-wrap::after{background:linear-gradient(90deg,rgba(36,196,223,.95),rgba(36,196,223,0));}
+.header-tagline-pro{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:clamp(1.15rem,2.15vw,2.15rem);line-height:1.2;color:#39d8f0;text-shadow:0 1px 10px rgba(0,0,0,.12);}
+.header-socials-pro{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 18px;margin-top:22px;}
+.social-brand{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;color:#fff !important;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.13);box-shadow:0 10px 20px rgba(0,0,0,.14);font-size:1.08rem;font-weight:800;line-height:1.1;text-decoration:none !important;transition:transform .18s ease,box-shadow .18s ease,background .18s ease,border-color .18s ease;}
+.social-brand:hover,.social-brand:focus-visible{transform:translateY(-1px);background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.22);box-shadow:0 14px 28px rgba(0,0,0,.18);}
+.social-icon-svg{width:26px;height:26px;display:block;flex:0 0 auto;}
+.social-facebook span{color:#eaf3ff;}
+.social-youtube span{color:#fff2f2;}
+.social-tiktok span{color:#f7fbff;}
+.header-nav-row{min-height:auto;display:block;padding:14px 24px 18px;border-top:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.02));}
+.main-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 18px;}
+.nav-link{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:999px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);font-weight:850;letter-spacing:-.01em;transition:transform .16s ease,background .16s ease,border-color .16s ease,box-shadow .16s ease;}
+.nav-link:hover,.nav-link:focus-visible{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.22);text-decoration:none;transform:translateY(-1px);box-shadow:0 10px 18px rgba(0,0,0,.12);}
+.nav-link.active{background:linear-gradient(135deg,rgba(32,213,228,.34),rgba(50,168,255,.22));border-color:rgba(36,196,223,.5);box-shadow:0 8px 18px rgba(7,44,77,.2);}
+.status-banner{margin-top:10px;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(4,21,40,.08);font-size:1.02rem;}
+.banner-wrap{padding:16px 0 8px;}
+.banner{max-width:1100px;margin:0 auto;border-radius:28px;overflow:hidden;box-shadow:0 18px 42px rgba(6,26,47,.14);}
+.banner img{width:100%;height:330px;object-fit:cover;object-position:center center;}
+.page-hero{padding-top:34px;}
+@media (max-width:1100px){
+  .header-top{padding:18px 18px 12px !important;}
+  .header-hero{grid-template-columns:100px 1fr 100px;min-height:190px;gap:14px;}
+  .header-side-logo img{width:min(13vw,110px);}
+  .header-socials-pro{gap:12px 14px;}
+  .social-brand{font-size:1rem;padding:9px 12px;}
+  .banner img{height:290px;}
+}
+@media (max-width:800px){
+  .header-hero{grid-template-columns:1fr;gap:12px;min-height:auto;}
+  .header-side-logo:last-child{display:none;}
+  .header-side-logo img{width:90px;}
+  .header-title-pro{font-size:clamp(2rem,8vw,3.2rem);}
+  .header-project-pro{font-size:clamp(1.7rem,7vw,2.8rem);}
+  .header-tagline-wrap{gap:12px;margin-top:12px;}
+  .header-tagline-wrap::before,.header-tagline-wrap::after{width:42px;}
+  .header-socials-pro{gap:10px 12px;margin-top:16px;}
+  .social-brand{font-size:.96rem;padding:8px 11px;}
+  .header-nav-row{padding:12px 14px 16px;}
+  .main-nav{gap:10px 10px;}
+  .nav-link{padding:12px 14px;font-size:1rem;}
+  .banner img{height:240px;}
+}
+@media (max-width:560px){
+  .header-top{padding:16px 12px 10px !important;}
+  .header-side-logo img{width:76px;}
+  .header-tagline-wrap::before,.header-tagline-wrap::after{display:none;}
+  .header-socials-pro{flex-direction:column;align-items:center;}
+  .social-brand{width:min(100%,270px);justify-content:center;}
+  .banner{border-radius:22px;}
+  .banner img{height:190px;}
+}
