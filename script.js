@@ -4,14 +4,28 @@
     const page = document.body.getAttribute('data-page') || '';
     document.querySelectorAll('.main-nav .nav-link').forEach(link=>{
       const href = link.getAttribute('href') || '';
-      if(href === page || (page === 'index.html' && href === 'index.html')) link.classList.add('active');
+      if(href === page || (page === 'index.html' && href === 'index.html')){
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
     });
     const toggle = document.querySelector('[data-menu-toggle]');
     const nav = document.querySelector('[data-main-nav]');
     if(toggle && nav){
-      toggle.addEventListener('click', function(){
-        const open = nav.classList.toggle('open');
+      const setMenuState = function(open){
+        nav.classList.toggle('open', open);
         toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      };
+      toggle.addEventListener('click', function(){
+        setMenuState(!nav.classList.contains('open'));
+      });
+      document.addEventListener('keydown', function(event){
+        if(event.key === 'Escape' && nav.classList.contains('open')) setMenuState(false);
+      });
+      document.addEventListener('click', function(event){
+        if(window.innerWidth > 1100) return;
+        const clickInsideMenu = nav.contains(event.target) || toggle.contains(event.target);
+        if(!clickInsideMenu && nav.classList.contains('open')) setMenuState(false);
       });
     }
 
