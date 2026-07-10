@@ -892,3 +892,30 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(36,196,223,.5);outli
   .banner-home-secondary img{max-height:240px !important;min-height:180px;}
   .status-banner-home{margin-top:14px !important;}
 }
+
+
+/* v15 AAA++ — image panorama intégrée dans l’en-tête et suppression du doublon sous l’en-tête */
+.header-combined{overflow:hidden;}
+.header-top{padding-bottom:18px !important;}
+.social-brand{backdrop-filter:none !important;-webkit-backdrop-filter:none !important;background:rgba(11,30,55,.92) !important;}
+.nav-link{background:rgba(8,27,50,.92) !important;}
+.header-nav-row{padding-bottom:18px !important;}
+.header-media-band{padding:0 24px 24px;}
+.header-media-band .banner-home-secondary{max-width:none !important;margin:0;border-radius:24px !important;box-shadow:0 18px 32px rgba(6,24,44,.18) !important;border:1px solid rgba(255,255,255,.10) !important;}
+.header-media-band .banner-home-secondary img{display:block;width:100%;max-height:330px !important;min-height:220px !important;object-fit:cover;object-position:center center;border-radius:24px;}
+.banner-wrap-return{display:none !important;}
+.status-banner-home{margin-top:20px !important;}
+.status-banner-home .container{max-width:1320px !important;}
+.page-hero-home{padding-top:28px !important;}
+@media (max-width:1100px){
+  .header-media-band{padding:0 18px 18px;}
+  .header-media-band .banner-home-secondary img{max-height:280px !important;min-height:200px !important;}
+}
+@media (max-width:760px){
+  .header-top{padding-bottom:14px !important;}
+  .header-nav-row{padding-bottom:14px !important;}
+  .header-media-band{padding:0 12px 14px;}
+  .header-media-band .banner-home-secondary{border-radius:18px !important;}
+  .header-media-band .banner-home-secondary img{max-height:210px !important;min-height:150px !important;border-radius:18px;}
+  .status-banner-home{margin-top:14px !important;}
+}
