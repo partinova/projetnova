@@ -919,3 +919,66 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(36,196,223,.5);outli
   .header-media-band .banner-home-secondary img{max-height:210px !important;min-height:150px !important;border-radius:18px;}
   .status-banner-home{margin-top:14px !important;}
 }
+
+
+/* v16 AAA++ — bannière fusionnée directement dans l'en-tête */
+.header-combined{
+  position:relative;
+  overflow:hidden;
+  background-image:
+    linear-gradient(180deg, rgba(2,10,23,.88) 0%, rgba(3,16,33,.68) 30%, rgba(3,16,33,.52) 56%, rgba(3,16,33,.72) 82%, rgba(3,16,33,.88) 100%),
+    url("assets/header-bg-nova.webp"),
+    linear-gradient(135deg,#041120 0%,#0a2341 48%,#0b2a4d 100%) !important;
+  background-size:cover, cover, cover !important;
+  background-position:center center, center 70%, center center !important;
+  background-repeat:no-repeat !important;
+}
+.header-combined::before{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    radial-gradient(circle at 50% 14%, rgba(93,203,233,.16), rgba(93,203,233,0) 28%),
+    linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0) 24%, rgba(255,255,255,0) 76%, rgba(255,255,255,.04) 100%);
+  pointer-events:none;
+}
+.header-top,.header-nav-row{position:relative;z-index:1;}
+.header-top{padding:34px 34px 28px !important;}
+.header-center{max-width:980px;}
+.header-title-pro{font-size:clamp(3rem,5.6vw,5.5rem);text-shadow:0 3px 18px rgba(0,0,0,.24);}
+.header-project-pro,.header-tagline-pro{ text-shadow:0 2px 12px rgba(0,0,0,.28); }
+.header-socials-pro{margin-top:30px;gap:16px;}
+.social-brand{
+  background:rgba(7,22,43,.56) !important;
+  border:1px solid rgba(255,255,255,.12) !important;
+  box-shadow:0 12px 26px rgba(0,0,0,.16);
+}
+.social-brand:hover,.social-brand:focus-visible{background:rgba(10,29,55,.74) !important;}
+.header-nav-row{
+  margin-top:22px;
+  padding:22px 26px 28px !important;
+  background:linear-gradient(180deg, rgba(4,17,32,0) 0%, rgba(4,17,32,.18) 18%, rgba(4,17,32,.36) 100%) !important;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.main-nav{gap:14px 14px;}
+.nav-link{
+  background:rgba(4,18,35,.64) !important;
+  border:1px solid rgba(255,255,255,.10) !important;
+  box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+.nav-link:hover,.nav-link:focus-visible{background:rgba(7,26,49,.8) !important;}
+.nav-link.active,.nav-link[aria-current="page"]{background:linear-gradient(135deg,rgba(37,211,229,.45),rgba(23,119,183,.34)) !important;}
+.banner-wrap-return,.header-media-band{display:none !important;}
+.status-banner-home{margin-top:18px !important;}
+.status-banner-home .container{max-width:1320px !important;}
+.page-hero-home{padding-top:26px !important;}
+@media (max-width:1100px){
+  .header-top{padding:26px 20px 22px !important;}
+  .header-nav-row{padding:18px 18px 22px !important;}
+}
+@media (max-width:760px){
+  .header-top{padding:20px 14px 18px !important;}
+  .header-title-pro{font-size:clamp(2.1rem,10vw,3.2rem);}
+  .header-socials-pro{gap:10px;margin-top:20px;}
+  .social-brand{background:rgba(7,22,43,.72) !important;}
+  .header-nav-row{margin-top:14px;padding:14px 12px 16px !important;}
+}
