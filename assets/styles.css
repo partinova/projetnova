@@ -843,3 +843,52 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(36,196,223,.5);outli
   .section-tight{padding-top:22px;padding-bottom:48px;}
   .doc-card{padding:20px;}
 }
+
+
+/* v14 AAA++ — suppression du doublon visuel et amélioration de la bannière secondaire */
+.header-combined{
+  background-image: radial-gradient(circle at 50% 16%, rgba(54,192,230,.16), rgba(54,192,230,0) 28%), linear-gradient(135deg,#031021 0%,#09213f 46%,#0b2a4d 100%) !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  border:1px solid rgba(214,231,247,.20) !important;
+  box-shadow:0 30px 64px rgba(3,15,29,.24) !important;
+}
+.header-combined::before{
+  background: radial-gradient(circle at 50% 18%, rgba(255,255,255,.08), rgba(255,255,255,0) 36%), linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.16)) !important;
+}
+.header-top{padding:30px 34px 24px !important;}
+.header-center{max-width:980px;margin-inline:auto;}
+.header-title-pro{max-width:980px;text-wrap:balance;}
+.header-socials-pro{margin-top:26px;}
+.banner-wrap-return{padding:24px 0 0 !important;}
+.banner-home-secondary{
+  max-width:1320px !important;
+  border-radius:32px !important;
+  border:1px solid rgba(12,36,63,.10) !important;
+  box-shadow:0 24px 48px rgba(8,28,52,.12) !important;
+  background:#08172a;
+}
+.banner-home-secondary img{
+  max-height:420px !important;
+  min-height:280px;
+  object-fit:cover;
+  object-position:center center;
+  filter:saturate(1.02) contrast(1.02);
+}
+.status-banner-home{margin-top:18px !important;}
+.status-banner-home .container{max-width:1320px !important;}
+.page-hero-home .container{max-width:1320px !important;}
+.section-home-overview .container,.section-home-transparency .container,.section-tight .container{max-width:1320px !important;}
+.hero-home-main h1{max-width:16ch;}
+@media (max-width:1100px){
+  .header-top{padding:24px 20px 18px !important;}
+  .banner-home-secondary{max-width:100% !important;}
+  .banner-home-secondary img{max-height:360px !important;min-height:240px;}
+}
+@media (max-width:760px){
+  .header-top{padding:20px 14px 16px !important;}
+  .banner-wrap-return{padding-top:18px !important;}
+  .banner-home-secondary{border-radius:22px !important;}
+  .banner-home-secondary img{max-height:240px !important;min-height:180px;}
+  .status-banner-home{margin-top:14px !important;}
+}
